@@ -38,7 +38,7 @@ const JuneteenthHistory: FC = () => {
 
         <div className="relative h-64 rounded-xl shadow-md overflow-hidden lg:h-96">
           <Image
-            src="/images/istockphoto-1324054346-1024x1024.jpg"
+            src="/images/soldiers.jpg"
             alt="African American Soldiers"
             fill
             className="object-cover object-center"

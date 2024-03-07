@@ -18,7 +18,7 @@ const events = [
     time: '10:00 AM',
     type: 'Parade',
     likes: 12,
-    image: '/images/20190629awParade11-12-1612207121.jpg',
+    image: '/images/parade.png',
   },
   {
     id: 2,

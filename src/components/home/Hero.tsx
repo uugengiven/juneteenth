@@ -16,10 +16,10 @@ const Hero: FC<HeroProps> = ({ title, description, ctaText, ctaLink }) => {
     <section className="relative bg-red-700 text-white">
       <div className="absolute inset-0">
         <Image
-          src="/images/istockphoto-475374202-1024x1024.jpg"
+          src="/images/image025.jpg"
           alt="Juneteenth Celebration"
           fill
-          className="object-cover object-top"
+          className="object-cover object-right-bottom"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900"></div>
