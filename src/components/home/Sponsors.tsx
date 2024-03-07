@@ -7,9 +7,9 @@ const sponsor_list = [
   { name: 'Sponsor One', logoUrl: '/images/cache_7630066.png', websiteUrl: 'https://sponsorone.com' },
   { name: 'Sponsor Two', logoUrl: '/images/cache_7630068.png', websiteUrl: 'https://sponsortwo.com' },
   { name: 'Sponsor Three', logoUrl: '/images/cache_7630069.png', websiteUrl: 'https://sponsorthree.com' },
-  { name: 'Sponsor One', logoUrl: '/images/cache_7630066.png', websiteUrl: 'https://sponsorone.com' },
-  { name: 'Sponsor Two', logoUrl: '/images/cache_7630068.png', websiteUrl: 'https://sponsortwo.com' },
-  { name: 'Sponsor Three', logoUrl: '/images/cache_7630069.png', websiteUrl: 'https://sponsorthree.com' },
+  { name: 'Sponsor Four', logoUrl: '/images/cache_7630066.png', websiteUrl: 'https://sponsorone.com' },
+  { name: 'Sponsor Five', logoUrl: '/images/cache_7630068.png', websiteUrl: 'https://sponsortwo.com' },
+  { name: 'Sponsor Six', logoUrl: '/images/cache_7630069.png', websiteUrl: 'https://sponsorthree.com' },
 ];
 
 const SponsorsSection = () => {
