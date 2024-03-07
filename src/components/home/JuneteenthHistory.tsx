@@ -27,7 +27,7 @@ const JuneteenthHistory: FC = () => {
               the United States army.
             </p>
           </div>
-          <div className="relative h-64 lg:h-96">
+          <div className="relative h-64 rounded-xl shadow-md overflow-hidden lg:h-96">
             <Image
               src="/images/istockphoto-1469053293-1024x1024.jpg"
               alt="Emancipation Proclamation"
@@ -36,7 +36,7 @@ const JuneteenthHistory: FC = () => {
             />
           </div>
 
-        <div className="relative h-64 lg:h-96">
+        <div className="relative h-64 rounded-xl shadow-md overflow-hidden lg:h-96">
           <Image
             src="/images/istockphoto-1324054346-1024x1024.jpg"
             alt="African American Soldiers"
@@ -87,7 +87,7 @@ const JuneteenthHistory: FC = () => {
             re-enactments, street fairs, and family reunions.
           </p>
         </div>
-        <div className="relative w-full h-64 lg:h-96">
+        <div className="relative h-64 rounded-xl shadow-md overflow-hidden lg:h-96">
           <Image
             src="/images/Screenshot_20230312-201046-142.png"
             alt="Juneteenth Celebration"
