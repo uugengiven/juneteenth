@@ -22,22 +22,15 @@ const navItems: NavItem[] = [
 ];
 
 const Navbar = () => {
-  const [open, setOpen] = React.useState(false);
-
   return (
     <header className="bg-red-700 text-white">
       <nav className="max-w-6xl mx-auto px-4 py-4">
         <div className="md:hidden">
           <NavigationMenu.Root>
             <NavigationMenu.List>
-              <NavigationMenu.Item className="relative">
-                <NavigationMenu.Trigger asChild>
-                  <button
-                    className="flex items-center space-x-2"
-                    onClick={() => setOpen(!open)}
-                  >
-                    <Hamburger className="w-6 h-6 fill-slate-200" />
-                  </button>
+              <NavigationMenu.Item className="relative z-50">
+                <NavigationMenu.Trigger>
+                  <Hamburger className="w-6 h-6 fill-slate-200" />
                 </NavigationMenu.Trigger>
                 <NavigationMenu.Content className="absolute">
                   <NavigationMenu.Sub>
