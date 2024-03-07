@@ -97,7 +97,7 @@ const sponsors = [
     {
       "name": "Duquesne Light",
       "websiteUrl": "https://www.duquesnelight.com/",
-      "imageUrl": "/images/sponsors/duguesnelight.png"
+      "imageUrl": "/images/sponsors/duquesnelight.png"
     },
     {
       "name": "Turner Construction",
