@@ -2,15 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { montserrat } from '@/app/fonts'; 
-
-const sponsor_list = [
-  { name: 'Sponsor One', logoUrl: '/images/cache_7630066.png', websiteUrl: 'https://sponsorone.com' },
-  { name: 'Sponsor Two', logoUrl: '/images/cache_7630068.png', websiteUrl: 'https://sponsortwo.com' },
-  { name: 'Sponsor Three', logoUrl: '/images/cache_7630069.png', websiteUrl: 'https://sponsorthree.com' },
-  { name: 'Sponsor Four', logoUrl: '/images/cache_7630066.png', websiteUrl: 'https://sponsorone.com' },
-  { name: 'Sponsor Five', logoUrl: '/images/cache_7630068.png', websiteUrl: 'https://sponsortwo.com' },
-  { name: 'Sponsor Six', logoUrl: '/images/cache_7630069.png', websiteUrl: 'https://sponsorthree.com' },
-];
+import sponsor_list from '@/data/sponsors';
 
 const SponsorsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -46,11 +38,11 @@ const SponsorsSection = () => {
   useEffect(() => {
     const tempSponsors = [...sponsors];
 
-    tempSponsors[currentIndex].className = 'translate-x-0 opacity-100 scale-110'; // center
-    tempSponsors[indexClamp(currentIndex + 1)].className = 'translate-x-full opacity-70'; // rightVisible
-    tempSponsors[indexClamp(currentIndex - 1)].className = '-translate-x-full opacity-70'; // leftVisible
-    tempSponsors[indexClamp(currentIndex - 2)].className = '-translate-x-[200%] opacity-0'; // offLeft
-    tempSponsors[indexClamp(currentIndex + 2)].className = 'translate-x-[200%] opacity-0'; // offRight
+    tempSponsors[currentIndex].className = 'translate-x-0 opacity-100 scale-125'; // center
+    tempSponsors[indexClamp(currentIndex + 1)].className = 'translate-x-[150%] opacity-70'; // rightVisible
+    tempSponsors[indexClamp(currentIndex - 1)].className = '-translate-x-[150%] opacity-70'; // leftVisible
+    tempSponsors[indexClamp(currentIndex - 2)].className = '-translate-x-[250%] opacity-0'; // offLeft
+    tempSponsors[indexClamp(currentIndex + 2)].className = 'translate-x-[250%] opacity-0'; // offRight
 
     setSponsors(sponsors);
   }, [currentIndex])
@@ -62,7 +54,7 @@ const SponsorsSection = () => {
         <div className="flex w-full h-52 justify-center items-center relative overflow-hidden">
           {sponsors.map((sponsor) => (
             <a key={sponsor.name} href={sponsor.websiteUrl} target="_blank" rel="noopener noreferrer" className={`absolute transition-all duration-500 ease-in-out transform ${sponsor.className}`}>
-              <img src={sponsor.logoUrl} alt={sponsor.name} className="h-32 md:h-52 object-contain" />
+              <img src={sponsor.imageUrl} alt={sponsor.name} className="h-32 md:h-52 max-w-32 md:max-w-52 object-contain" />
             </a>
           ))}
         </div>
