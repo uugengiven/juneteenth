@@ -51,7 +51,7 @@ const SponsorsSection = () => {
     <section className="py-12 px-4 md:px-0 bg-white text-gray-700">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className={`text-3xl font-bold mb-8 ${montserrat.className}`}>Thank You to Our Sponsors</h2>
-        <div className="flex w-full h-52 justify-center items-center relative overflow-hidden">
+        <div className="flex w-full h-52 md:h-64 justify-center items-center relative overflow-hidden">
           {sponsors.map((sponsor) => (
             <a key={sponsor.name} href={sponsor.websiteUrl} target="_blank" rel="noopener noreferrer" className={`absolute transition-all duration-500 ease-in-out transform ${sponsor.className}`}>
               <img src={sponsor.imageUrl} alt={sponsor.name} className="h-32 md:h-52 max-w-32 md:max-w-52 object-contain" />
