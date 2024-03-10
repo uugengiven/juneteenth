@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import * as Label from '@radix-ui/react-label';
 import * as RadioGroup from '@radix-ui/react-radio-group';
+import { submitVendorApplicationForm } from '@/components/vendor-application/VendorApplicationForm.server';
 
 const VendorApplicationPage = () => {
   const [name, setName] = useState('');
@@ -12,17 +13,20 @@ const VendorApplicationPage = () => {
   const [boothSize, setBoothSize] = useState('10x10');
   const [boothType, setBoothType] = useState('Non-Profit');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Submit the form data to your Prisma database
-    console.log({
+
+    const formData = {
       name,
       companyName,
       phoneNumber,
       email,
       boothSize,
       boothType,
-    });
+    };
+
+    const result = await submitVendorApplicationForm(formData); // server-side version
+    console.log(result); // TODO: should probably handle errors here somehow
   };
 
   return (
@@ -33,6 +37,7 @@ const VendorApplicationPage = () => {
           <div>
             <Label.Root className="block text-lg font-medium text-gray-700" htmlFor="name">
               Name
+              <span className="text-red-700 px-1">*</span>
             </Label.Root>
             <input
               id="name"
@@ -54,13 +59,13 @@ const VendorApplicationPage = () => {
               value={companyName}
               onChange={(e) => setCompanyName(e.target.value)}
               className="mt-1 block w-full border-b border-gray-300 focus:border-green-700 focus:outline-none"
-              required
               placeholder='If applicable'
             />
           </div>
           <div>
             <Label.Root className="block text-lg font-medium text-gray-700" htmlFor="phoneNumber">
               Phone Number
+              <span className="text-red-700 px-1">*</span>
             </Label.Root>
             <input
               id="phoneNumber"
@@ -75,6 +80,7 @@ const VendorApplicationPage = () => {
           <div>
             <Label.Root className="block text-lg font-medium text-gray-700" htmlFor="email">
               Email Address
+              <span className="text-red-700 px-1">*</span>
             </Label.Root>
             <input
               id="email"
@@ -87,7 +93,10 @@ const VendorApplicationPage = () => {
             />
           </div>
           <div>
-            <Label.Root className="block text-lg font-medium text-gray-700">Booth Size</Label.Root>
+            <Label.Root className="block text-lg font-medium text-gray-700">
+              Booth Size
+              <span className="text-red-700 px-1">*</span>
+            </Label.Root>
             <RadioGroup.Root
                 className="mt-2 space-y-2"
                 value={boothSize}
@@ -126,7 +135,10 @@ const VendorApplicationPage = () => {
             </RadioGroup.Root>
             </div>
             <div>
-                <Label.Root className="block text-lg font-medium text-gray-700">Booth Type</Label.Root>
+              <Label.Root className="block text-lg font-medium text-gray-700">
+                Booth Type
+                <span className="text-red-700 px-1">*</span>
+              </Label.Root>
                 <RadioGroup.Root
                     className="mt-2 space-y-2"
                     value={boothType}
