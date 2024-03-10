@@ -1,14 +1,18 @@
 import EventHero from '@/components/schedule/EventHero';
 import ClientComponent from './ClientComponents';
 import events from '@/data/events';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const EventsPage = async () => {
   
     return (
-      <div>
+      <>
+        <Navbar />
         <EventHero event={events[0]} />
         <ClientComponent events={events} />
-      </div>
+        <Footer />
+      </>
     );
   };
 
