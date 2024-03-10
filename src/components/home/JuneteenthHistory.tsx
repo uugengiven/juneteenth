@@ -22,10 +22,6 @@ const JuneteenthHistory: FC = () => {
               Logan Hotel in Altoona to pledge their support for the pending proclamation. Only Maryland voted against
               the Emancipation Proclamation.
             </p>
-            <p className="text-lg text-gray-700 mb-4">
-              While the document was imperfect, it did provide for the development of African American military units in
-              the United States army.
-            </p>
           </div>
           <div className="relative h-64 rounded-xl shadow-md overflow-hidden lg:h-96">
             <Image
@@ -45,6 +41,10 @@ const JuneteenthHistory: FC = () => {
           />
         </div>
         <div>
+          <p className="text-lg text-gray-700 mb-4">
+            While the document was imperfect, it did provide for the development of African American military units in
+            the United States army.
+          </p>
           <p className="text-lg text-gray-700 mb-4">
             Pennsylvania was amongst the first states in the nation to arm men of color! Leading African Americans took
             up the task of recruiting men of color for the Union army. This roster of recruiters includes the list of
