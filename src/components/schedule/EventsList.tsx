@@ -7,8 +7,12 @@ interface EventsListProps {
 }
 
 const EventsList : React.FC<EventsListProps> = ({ events, selectedFilter }) => {
+    const scheduledEvents = JSON.parse(localStorage.getItem('scheduledEvents') || '[]');
+
     const filteredEvents = selectedFilter === 'all'
       ? events
+      : selectedFilter === 'scheduled'
+      ? events.filter((event) => scheduledEvents.includes(event.id))
       : events.filter((event) => event.type === selectedFilter);
   
     return (
