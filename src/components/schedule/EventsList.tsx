@@ -1,3 +1,6 @@
+"use client"
+
+import { useState, useEffect } from 'react';
 import EventCard from './EventCard';
 import { EventInterface } from '@/data/events';
 
@@ -7,7 +10,11 @@ interface EventsListProps {
 }
 
 const EventsList : React.FC<EventsListProps> = ({ events, selectedFilter }) => {
-    const scheduledEvents = JSON.parse(localStorage.getItem('scheduledEvents') || '[]');
+    const[scheduledEvents, setScheduledEvents] = useState<number[]>([]);
+
+    useEffect(() => {
+      setScheduledEvents(JSON.parse(localStorage.getItem('scheduledEvents') || '[]'));
+    }, []);
 
     const filteredEvents = selectedFilter === 'all'
       ? events
