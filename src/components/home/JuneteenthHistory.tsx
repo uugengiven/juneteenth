@@ -25,7 +25,7 @@ const JuneteenthHistory: FC = () => {
           </div>
           <div className="relative h-64 rounded-xl shadow-md overflow-hidden lg:h-96">
             <Image
-              src="/images/istockphoto-1469053293-1024x1024.jpg"
+              src="/images/iStock-1469053293.jpg"
               alt="Emancipation Proclamation"
               fill
               className="object-cover object-center"
