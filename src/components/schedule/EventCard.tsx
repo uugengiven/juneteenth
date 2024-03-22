@@ -47,6 +47,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
           layout="fill"
           objectFit="cover"
           className="w-full h-full"
+          objectPosition='top'
         />
       </div>
       <div className="flex items-center justify-between px-4 py-2 bg-slate-900">

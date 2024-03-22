@@ -33,6 +33,7 @@ const FeaturedEvents: FC<FeaturedEventsProps> = ({ events }) => {
                   fill
                   className="object-cover"
                   priority
+                  objectPosition='top'
                 />
               </div>
               <div className="p-6">

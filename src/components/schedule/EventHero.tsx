@@ -16,6 +16,7 @@ const EventHero:FC<EventHeroProps> = ({ event }) => {
           layout="fill"
           objectFit="cover"
           className="w-full h-full"
+          objectPosition='top'
         />
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900"></div>
