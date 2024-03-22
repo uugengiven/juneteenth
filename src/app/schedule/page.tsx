@@ -1,11 +1,17 @@
 import EventHero from '@/components/schedule/EventHero';
 import ClientComponent from './ClientComponents';
-import events from '@/data/events';
+import Event from '@/data/models/Event';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 const EventsPage = async () => {
-  
+    const events = JSON.parse(JSON.stringify(await Event.findAll({
+      order: [
+        ['date', 'ASC'],
+        ['time', 'ASC']
+      ]
+    })));
+
     return (
       <>
         <Navbar />

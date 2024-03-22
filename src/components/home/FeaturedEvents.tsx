@@ -3,7 +3,7 @@ import { FC } from 'react';
 
 interface Event {
   id: number;
-  title: string;
+  name: string;
   date: string;
   time: string;
   type: string;
@@ -28,8 +28,8 @@ const FeaturedEvents: FC<FeaturedEventsProps> = ({ events }) => {
             >
               <div className="relative h-64">
                 <Image
-                  src={event.image}
-                  alt={event.title}
+                  src={`/images/${event.image}`}
+                  alt={event.name}
                   fill
                   className="object-cover"
                   priority
@@ -51,7 +51,7 @@ const FeaturedEvents: FC<FeaturedEventsProps> = ({ events }) => {
                     <span className="text-white text-sm">{event.likes}</span>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">{event.title}</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">{event.name}</h3>
                 <p className="text-white text-sm">{event.date} | {event.time}</p>
               </div>
             </div>

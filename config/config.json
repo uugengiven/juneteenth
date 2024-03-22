@@ -1,0 +1,15 @@
+{
+    "development": {
+      "username": "neondb_owner",
+      "password": "kdCVS3b2FBZY",
+      "database": "neondb",
+      "host": "ep-green-leaf-a501ptxk.us-east-2.aws.neon.tech",
+      "dialect": "postgres",
+      "dialectOptions": {
+        "ssl": {
+          "require": true,
+          "rejectUnauthorized": false
+        }
+      }
+    }
+  }

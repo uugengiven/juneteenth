@@ -7,7 +7,7 @@ const VendorApplicationPage: NextPage = () => {
     return (
       <>
         <Navbar />
-        <VendorApplicationForm />
+          <VendorApplicationForm />
         <Footer />
       </>
     );

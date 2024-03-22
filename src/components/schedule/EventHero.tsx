@@ -8,10 +8,10 @@ interface EventHeroProps {
 
 const EventHero:FC<EventHeroProps> = ({ event }) => {
   return (
-    <section className="relative shadow-lg h-[75vh]">
+    <section className="relative h-[75vh]">
       <div className="absolute inset-0">
         <Image
-          src={event.image}
+          src={`/images/${event.image}`}
           alt={event.name}
           layout="fill"
           objectFit="cover"

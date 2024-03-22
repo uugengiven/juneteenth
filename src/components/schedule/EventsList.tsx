@@ -16,6 +16,10 @@ const EventsList : React.FC<EventsListProps> = ({ events, selectedFilter }) => {
       setScheduledEvents(JSON.parse(localStorage.getItem('scheduledEvents') || '[]'));
     }, []);
 
+    useEffect(() => {
+      setScheduledEvents(JSON.parse(localStorage.getItem('scheduledEvents') || '[]'));
+    }, [selectedFilter]);
+
     const filteredEvents = selectedFilter === 'all'
       ? events
       : selectedFilter === 'scheduled'

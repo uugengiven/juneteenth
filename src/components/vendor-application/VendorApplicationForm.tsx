@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import * as Label from '@radix-ui/react-label';
 import * as RadioGroup from '@radix-ui/react-radio-group';
-import { submitVendorApplicationForm } from '@/components/vendor-application/VendorApplicationForm.server';
+import { useRouter } from 'next/navigation';
 
 const VendorApplicationPage = () => {
   const [name, setName] = useState('');
@@ -12,6 +12,7 @@ const VendorApplicationPage = () => {
   const [email, setEmail] = useState('');
   const [boothSize, setBoothSize] = useState('10x10');
   const [boothType, setBoothType] = useState('Non-Profit');
+  const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -25,8 +26,26 @@ const VendorApplicationPage = () => {
       boothType,
     };
 
-    const result = await submitVendorApplicationForm(formData); // server-side version
-    console.log(result); // TODO: should probably handle errors here somehow
+    try {
+      const response = await fetch('/api/vendorapplication', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        router.push('/thanks');
+        // Reset form fields or show success message
+      } else {
+        console.error('Error submitting form:', response.statusText);
+        // Show error message to the user
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      // Show error message to the user
+    }
   };
 
   return (

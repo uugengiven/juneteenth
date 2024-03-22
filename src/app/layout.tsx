@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { lato } from "./fonts";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
+import Email from "@/components/Email";
+
 
 export const metadata: Metadata = {
   title: "WPA Juneteenth",
@@ -13,8 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={lato.className}>{children}</body>
-    </html>
+    <>
+      <Email />
+      <ClerkProvider>
+        <html lang="en">
+          <body className={lato.className}>{children}</body>
+        </html>
+      </ClerkProvider>
+    </>
   );
 }

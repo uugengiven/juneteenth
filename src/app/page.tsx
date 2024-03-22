@@ -9,38 +9,11 @@ import Footer from '../components/Footer';
 import SawTeethDivider from '@/components/home/SawTeethDivider';
 import JuneteenthHistory from '@/components/home/JuneteenthHistory';
 import VendorSponsorshipSection from '@/components/home/VendorSponsorshipSection';
+import Event from '@/data/models/Event';
 
-const events = [
-  {
-    id: 1,
-    title: 'Jubilee Parade',
-    date: 'June 16',
-    time: '10:00 AM',
-    type: 'Parade',
-    likes: 12,
-    image: '/images/parade.png',
-  },
-  {
-    id: 2,
-    title: 'Vendor Fair',
-    date: 'June 14-16',
-    time: '12:00 PM',
-    type: 'Market',
-    likes: 87,
-    image: '/images/IMG_20230902_150344718.jpg',
-  },
-  {
-    id: 3,
-    title: 'Jazmin',
-    date: 'June 15, 2023',
-    time: '7:00 PM',
-    type: 'Music',
-    likes: 122,
-    image: '/images/FB_IMG_1695686484619.jpg',
-  },
-];
+const Home: NextPage = async () => {
+  const events = JSON.parse(JSON.stringify(await Event.findAll({ where: { featured: true } })));
 
-const Home: NextPage = () => {
   return (
     <>
       <Navbar />

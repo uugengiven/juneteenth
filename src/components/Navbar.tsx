@@ -4,6 +4,7 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import Link from 'next/link';
 import React from 'react';
 import Hamburger from './icons/Hamburger';
+import { SignedIn, UserButton, SignOutButton } from '@clerk/nextjs'
 
 // Define a type for navigation items
 type NavItem = {
@@ -25,7 +26,7 @@ const Navbar = () => {
   return (
     <header className="bg-red-700 text-white">
       <nav className="max-w-6xl mx-auto px-4 py-4">
-        <div className="md:hidden">
+        <div className="md:hidden flex w-full justify-between">
           <NavigationMenu.Root>
             <NavigationMenu.List>
               <NavigationMenu.Item className="relative z-50">
@@ -48,6 +49,11 @@ const Navbar = () => {
               </NavigationMenu.Item>
             </NavigationMenu.List>
         </NavigationMenu.Root>
+        <div className="self-end">
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+        </div>
         </div>
         <NavigationMenu.Root>
           <NavigationMenu.List className="hidden md:flex space-x-4 justify-center">
@@ -58,6 +64,11 @@ const Navbar = () => {
                 </Link>
               </NavigationMenu.Item>
             ))}
+            <SignedIn>
+              <NavigationMenu.Item>
+                <SignOutButton />
+              </NavigationMenu.Item>
+            </SignedIn>
           </NavigationMenu.List>
         </NavigationMenu.Root>
       </nav>

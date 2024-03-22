@@ -42,7 +42,7 @@ const EventCard: React.FC<EventCardProps> = ({ event }) => {
   )}
       <div className="relative h-48 rounded-t-lg overflow-hidden">
         <Image
-          src={event.image}
+          src={`/images/${event.image}`}
           alt={event.name}
           layout="fill"
           objectFit="cover"

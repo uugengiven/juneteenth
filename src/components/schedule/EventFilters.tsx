@@ -12,7 +12,7 @@ const EventFilters: React.FC<EventFiltersProps> = ({
   onFilterChange,
 }) => {
   return (
-    <section className="py-4 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-700 via-orange-500 to-yellow-400 overflow-x-auto">
+    <section className="py-4 px-4 sm:px-6 lg:px-8 bg-slate-900 overflow-x-auto">
       <RadioGroup.Root
         className="flex space-x-4"
         value={selectedFilter}
