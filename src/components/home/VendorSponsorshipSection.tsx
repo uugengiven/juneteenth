@@ -12,7 +12,7 @@ const VendorSponsorshipSection: FC = () => {
             <p className="text-lg text-white mb-6">
               Support the Juneteenth Celebration and showcase your brand to our community.
             </p>
-            <Link href="/sponsorship">
+            <Link href="/sponsors">
               <span className="inline-block bg-white text-red-700 font-bold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100">
                 Sponsorship Opportunities
               </span>

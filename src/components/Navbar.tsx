@@ -15,7 +15,7 @@ type NavItem = {
 // Array of navigation items
 const navItems: NavItem[] = [
   { name: 'Home', path: '/' },
-  { name: 'About Juneteenth', path: '/about' },
+  { name: 'About Juneteenth', path: '/#history' },
   { name: 'Schedule', path: '/schedule' },
   { name: 'Vendor Signup', path: '/vendor-application' },
   { name: 'Purchase Tickets', path: '/tickets' },

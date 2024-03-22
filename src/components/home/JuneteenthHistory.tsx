@@ -4,7 +4,7 @@ import { montserrat } from '@/app/fonts';
 
 const JuneteenthHistory: FC = () => {
   return (
-    <section className={`bg-white py-16 px-4 sm:px-6 lg:px-8 font-light ${montserrat.className}`}>
+    <section id="history" className={`bg-white py-16 px-4 sm:px-6 lg:px-8 font-light ${montserrat.className}`}>
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-extrabold text-gray-900 mb-8">The History of Juneteenth</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

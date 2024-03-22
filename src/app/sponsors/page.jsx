@@ -7,6 +7,24 @@ const SponsorshipPage = () => {
     <>
     <Navbar />
     <div className="container mx-auto px-4 py-8 bg-white rounded-md my-4 shadow-lg">
+        <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-12 px-6 rounded-lg mb-8">
+            <div className="max-w-4xl mx-auto">
+                <h2 className="text-4xl font-bold mb-4">Sponsor the Juneteenth Festival</h2>
+                <p className="text-xl mb-6">
+                Join us in celebrating the vibrant spirit of Juneteenth in Pittsburgh! With an estimated attendance of over 48,000 people and a significant impact on the local economy, the Juneteenth festival is a fantastic opportunity to showcase your brand and support the community.
+                </p>
+                <p className="text-xl mb-8">
+                By sponsoring the Juneteenth festival, you&apos;ll be part of an incredible event that brings together people from all over the city and beyond. Don&apos;t miss out on this chance to make a positive impact and connect with a diverse and engaged audience.
+                </p>
+                <a
+                href="mailto:stoptheviolence@yahoo.com"
+                className="inline-block bg-white text-blue-500 font-bold py-3 px-8 rounded-lg hover:bg-blue-100"
+                >
+                Become a Sponsor
+                </a>
+            </div>
+        </div>
+
       <div className="flex flex-col space-y-8">
         {/* Top section */}
         <div className="flex justify-between bg-blue-100 rounded-lg p-6">
