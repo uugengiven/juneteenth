@@ -43,6 +43,37 @@ const Navbar = () => {
                           </Link>
                         </NavigationMenu.Item>
                       ))}
+                      <NavigationMenu.Item>
+                        <NavigationMenu.Trigger className="hover:font-bold">
+                          Maps
+                        </NavigationMenu.Trigger>
+                        <NavigationMenu.Content>
+                          <NavigationMenu.Sub>
+                            <NavigationMenu.List className="flex flex-col space-y-2 bg-red-700 p-4">
+                              <NavigationMenu.Item>
+                                <a
+                                  href="/downloads/juneteenth-map.pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="hover:font-bold"
+                                >
+                                  Juneteenth
+                                </a>
+                              </NavigationMenu.Item>
+                              <NavigationMenu.Item>
+                                <a
+                                  href="/downloads/youth-fest-map.pdf"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="hover:font-bold"
+                                >
+                                  Youth Fest
+                                </a>
+                              </NavigationMenu.Item>
+                            </NavigationMenu.List>
+                          </NavigationMenu.Sub>
+                        </NavigationMenu.Content>
+                      </NavigationMenu.Item>
                     </NavigationMenu.List>
                   </NavigationMenu.Sub>
                 </NavigationMenu.Content>
@@ -64,6 +95,38 @@ const Navbar = () => {
                 </Link>
               </NavigationMenu.Item>
             ))}
+            <NavigationMenu.Item>
+              <NavigationMenu.Trigger className="hover:font-bold">
+                Maps
+              </NavigationMenu.Trigger>
+              <NavigationMenu.Content>
+                <NavigationMenu.Sub>
+                  <NavigationMenu.List className="flex flex-col space-y-2 bg-red-700 p-4">
+                    <NavigationMenu.Item>
+                      <a
+                        href="/downloads/juneteenth-map.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:font-bold"
+                      >
+                        Juneteenth
+                      </a>
+                    </NavigationMenu.Item>
+                    <NavigationMenu.Item>
+                      <a
+                        href="/downloads/youth-fest-map.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:font-bold"
+                      >
+                        Youth Fest
+                      </a>
+                    </NavigationMenu.Item>
+                  </NavigationMenu.List>
+                </NavigationMenu.Sub>
+              </NavigationMenu.Content>
+            </NavigationMenu.Item>
+
             <SignedIn>
               <NavigationMenu.Item>
                 <SignOutButton />
