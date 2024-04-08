@@ -123,6 +123,11 @@ const sponsors = [
       "name": "Highmark",
       "websiteUrl": "https://www.highmark.com/",
       "imageUrl": "/images/sponsors/highmark.png"
+    },
+    {
+      "name": "Target",
+      "websiteUrl": "https://www.target.com",
+      "imageUrl": "/images/sponsors/target.png"
     }
   ];
 

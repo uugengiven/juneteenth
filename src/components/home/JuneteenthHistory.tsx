@@ -48,7 +48,7 @@ const JuneteenthHistory: FC = () => {
           <p className="text-lg text-gray-700 mb-4">
             Pennsylvania was amongst the first states in the nation to arm men of color! Leading African Americans took
             up the task of recruiting men of color for the Union army. This roster of recruiters includes the list of
-            powerful and dedicated superintendents and conductors of Pennsylvania&apos;s Underground Railroad: Willian Stills
+            powerful and dedicated superintendents and conductors of Pennsylvania&apos;s Underground Railroad: William Still
             and Octavio Catto in Philadelphia, William Goodrich in York, Stephen Smith in Lancaster, Henry Watson in
             Chambersburg, Thomas Chester in Harrisburg, John Nesbit in Altoona, John Smith in Johnston, and John Peck,
             Henry Highland Garnett, and Martin Delaney in Pittsburgh. Each was also a founding member of the post-civil
