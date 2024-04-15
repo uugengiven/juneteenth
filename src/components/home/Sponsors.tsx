@@ -6,7 +6,7 @@ import sponsor_list from '@/data/sponsors';
 
 const SponsorsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
-  const [sponsors, setSponsors] = useState(sponsor_list.map((sponsor, index) => {
+  const [sponsors, setSponsors] = useState(sponsor_list.filter((sponsor) => sponsor.visible).map((sponsor, index) => {
     if (index === 0) {
       return { ...sponsor, className: '-translate-x-full opacity-50' } // leftVisible
     }

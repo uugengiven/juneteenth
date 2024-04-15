@@ -18,7 +18,7 @@ const navItems: NavItem[] = [
   { name: 'About Juneteenth', path: '/#history' },
   { name: 'Schedule', path: '/schedule' },
   { name: 'Vendor Signup', path: '/vendor-application' },
-  { name: 'Purchase Tickets', path: '/tickets' },
+//  { name: 'Purchase Tickets', path: '/tickets' },
   { name: 'Sponsors', path: '/sponsors' },
 ];
 
