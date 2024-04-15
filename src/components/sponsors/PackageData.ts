@@ -121,7 +121,7 @@ const Data:SponsorshipPackageType[] = [
       "20 sec video production opportunity to be shared on social media channels"
     ],
     "images": [
-        "/images/sponsorslides/liberty.png"
+        "/images/sponsorslides/liberty.jpg"
     ],
     "variant": "red"
   },
@@ -207,7 +207,7 @@ const Data:SponsorshipPackageType[] = [
       "Website Link and Logo"
     ],
     "images": [
-        "/images/sponsorslides/friends.png"
+        "/images/sponsorslides/friends.jpg"
     ],
     "variant": "red"
   }

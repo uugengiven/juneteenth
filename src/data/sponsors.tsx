@@ -130,6 +130,12 @@ const sponsors = [
       "websiteUrl": "https://www.rideprt.org/",
       "imageUrl": "/images/sponsors/prt.png",
       "visible": true
+    },
+    {
+      "name": "Metro Community Health Center",
+      "websiteUrl": "https://metrocommunityhealthcenter.org/",
+      "imageUrl": "/images/sponsors/metro.png",
+      "visible": true
     }
   ];
 
