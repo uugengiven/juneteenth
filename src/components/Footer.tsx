@@ -10,24 +10,18 @@ const Footer = () => {
           <p>Phone: <a href="tel:7242059376" className="underline">724-205-9376</a></p>
         </div>
         <div className="flex flex-wrap flex-col mb-4 md:mb-0">
-          <Link href="/about">
+          <Link href="/#history">
             <span className="mr-4 hover:underline cursor-pointer">About</span>
           </Link>
-          <Link href="/contact">
-            <span className="mr-4 hover:underline cursor-pointer">Contact</span>
-          </Link>
-          <Link href="/vendor-signup">
+          <Link href="/vendor-application">
             <span className="mr-4 hover:underline cursor-pointer">Vendor Signup</span>
-          </Link>
-          <Link href="/tickets">
-            <span className="hover:underline cursor-pointer">Buy Tickets</span>
           </Link>
         </div>
         <div className="flex flex-col">
           {/* Example social media links */}
-          <a href="https://facebook.com" className="mr-4 hover:underline">Facebook</a>
-          <a href="https://twitter.com" className="mr-4 hover:underline">Twitter</a>
-          <a href="https://instagram.com" className="hover:underline">Instagram</a>
+          <a href="https://facebook.com/wpajuneteenth" className="mr-4 hover:underline">Facebook</a>
+          <a href="https://twitter.com/bmarhsallprdtns" className="mr-4 hover:underline">Twitter</a>
+          <a href="https://instagram.com/bmprdtns" className="hover:underline">Instagram</a>
         </div>
       </div>
     </footer>
