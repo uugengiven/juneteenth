@@ -124,6 +124,12 @@ const sponsors = [
       "websiteUrl": "https://www.target.com",
       "imageUrl": "/images/sponsors/target.png",
       "visible": true
+    },
+    {
+      "name": "Pittsburgh Regional Transit",
+      "websiteUrl": "https://www.rideprt.org/",
+      "imageUrl": "/images/sponsors/prt.png",
+      "visible": true
     }
   ];
 
