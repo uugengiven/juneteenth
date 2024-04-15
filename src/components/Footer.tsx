@@ -16,6 +16,9 @@ const Footer = () => {
           <Link href="/vendor-application">
             <span className="mr-4 hover:underline cursor-pointer">Vendor Signup</span>
           </Link>
+          <Link href="/sponsors">
+            <span className="mr-4 hover:underline cursor-pointer">Sponsorship</span>
+          </Link>
         </div>
         <div className="flex flex-col">
           {/* Example social media links */}
