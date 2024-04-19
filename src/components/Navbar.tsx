@@ -52,7 +52,7 @@ const Navbar = () => {
                             <NavigationMenu.List className="flex flex-col space-y-2 bg-red-700 p-4">
                               <NavigationMenu.Item>
                                 <a
-                                  href="/downloads/juneteenth-map.pdf"
+                                  href="/downloads/juneteenth-map.jpg"
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="hover:font-bold"
@@ -104,7 +104,7 @@ const Navbar = () => {
                   <NavigationMenu.List className="flex flex-col space-y-2 bg-red-700 p-4">
                     <NavigationMenu.Item>
                       <a
-                        href="/downloads/juneteenth-map.pdf"
+                        href="/downloads/juneteenth-map.jpg"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:font-bold"
