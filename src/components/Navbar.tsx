@@ -1,10 +1,10 @@
-"use client"
+'use client';
 
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import Link from 'next/link';
 import React from 'react';
 import Hamburger from './icons/Hamburger';
-import { SignedIn, UserButton, SignOutButton } from '@clerk/nextjs'
+import { SignedIn, UserButton, SignOutButton } from '@clerk/nextjs';
 
 // Define a type for navigation items
 type NavItem = {
@@ -18,7 +18,7 @@ const navItems: NavItem[] = [
   { name: 'About Juneteenth', path: '/#history' },
   { name: 'Schedule', path: '/schedule' },
   { name: 'Vendor Signup', path: '/vendor-application' },
-//  { name: 'Purchase Tickets', path: '/tickets' },
+  //  { name: 'Purchase Tickets', path: '/tickets' },
   { name: 'Sponsors', path: '/sponsors' },
 ];
 
@@ -36,15 +36,18 @@ const Navbar = () => {
                 <NavigationMenu.Content className="absolute">
                   <NavigationMenu.Sub>
                     <NavigationMenu.List className="flex flex-col space-y-4 bg-red-700 p-4">
-                      {navItems.map((item) => (
+                      {navItems.map(item => (
                         <NavigationMenu.Item key={item.name}>
-                          <Link href={item.path} className="hover:font-bold">
+                          <Link
+                            href={item.path}
+                            className="transition ease-in-out delay-50 hover:opacity-80"
+                          >
                             {item.name}
                           </Link>
                         </NavigationMenu.Item>
                       ))}
                       <NavigationMenu.Item>
-                        <NavigationMenu.Trigger className="hover:font-bold">
+                        <NavigationMenu.Trigger className="transition ease-in-out delay-50 hover:opacity-80">
                           Maps
                         </NavigationMenu.Trigger>
                         <NavigationMenu.Content>
@@ -55,7 +58,7 @@ const Navbar = () => {
                                   href="/downloads/juneteenth-map.pdf"
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="hover:font-bold"
+                                  className="transition ease-in-out delay-50 hover:opacity-80"
                                 >
                                   Juneteenth
                                 </a>
@@ -65,7 +68,7 @@ const Navbar = () => {
                                   href="/downloads/youth-fest-map.pdf"
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="hover:font-bold"
+                                  className="transition ease-in-out delay-50 hover:opacity-80"
                                 >
                                   Youth Fest
                                 </a>
@@ -79,24 +82,27 @@ const Navbar = () => {
                 </NavigationMenu.Content>
               </NavigationMenu.Item>
             </NavigationMenu.List>
-        </NavigationMenu.Root>
-        <div className="self-end">
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-        </div>
+          </NavigationMenu.Root>
+          <div className="self-end">
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </div>
         </div>
         <NavigationMenu.Root>
           <NavigationMenu.List className="hidden md:flex space-x-4 justify-center">
-            {navItems.map((item) => (
+            {navItems.map(item => (
               <NavigationMenu.Item key={item.name}>
-                <Link href={item.path} className="hover:font-bold">
+                <Link
+                  href={item.path}
+                  className="transition ease-in-out delay-50 hover:opacity-80"
+                >
                   {item.name}
                 </Link>
               </NavigationMenu.Item>
             ))}
             <NavigationMenu.Item>
-              <NavigationMenu.Trigger className="hover:font-bold">
+              <NavigationMenu.Trigger className="transition ease-in-out delay-50 hover:opacity-80">
                 Maps
               </NavigationMenu.Trigger>
               <NavigationMenu.Content>
@@ -107,7 +113,7 @@ const Navbar = () => {
                         href="/downloads/juneteenth-map.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:font-bold"
+                        className="transition ease-in-out delay-50 hover:opacity-80"
                       >
                         Juneteenth
                       </a>
@@ -117,7 +123,7 @@ const Navbar = () => {
                         href="/downloads/youth-fest-map.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:font-bold"
+                        className="transition ease-in-out delay-50 hover:opacity-80"
                       >
                         Youth Fest
                       </a>
