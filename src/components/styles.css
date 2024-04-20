@@ -4,11 +4,6 @@
 @import '@radix-ui/colors/purple.css';
 @import '@radix-ui/colors/violet.css';
 
-/* reset */
-button,
-p {
-  all: unset;
-}
 
 .NavigationMenuRoot {
   position: relative;

@@ -2,7 +2,7 @@
 
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import Link from 'next/link';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Hamburger from './icons/Hamburger';
 import { SignedIn, UserButton, SignOutButton } from '@clerk/nextjs';
 import classNames from 'classnames';
@@ -27,11 +27,12 @@ const navItems: NavItem[] = [
 
 // ListItems in Nav Dropdown
 type ListItemType = { 
+  children?: ReactNode;
   className?: string; 
-  href: string; 
+  href?: string; 
   rel?: string; 
   target?: string; 
-  title: string; 
+  title?: string; 
 }
 
 const ListItem = 
@@ -180,9 +181,20 @@ const Navbar = () => {
     <NavigationMenu.Root className="NavigationMenuRoot">
       <NavigationMenu.List className="NavigationMenuList">
 
+      {navItems.map((item) => (
+        <NavigationMenu.Item key={item.name}>
+          <NavigationMenu.Link
+            className="NavigationMenuLink"
+            href={item.path}
+          >
+            {item.name}
+          </NavigationMenu.Link>
+        </NavigationMenu.Item>
+      ))}
+
         <NavigationMenu.Item>
           <NavigationMenu.Trigger className="NavigationMenuTrigger">
-            Overview <CaretDownIcon className="CaretDown" aria-hidden />
+            Maps <CaretDownIcon className="CaretDown" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content className="NavigationMenuContent">
             <ul className="List">
@@ -202,14 +214,16 @@ const Navbar = () => {
           </NavigationMenu.Content>
         </NavigationMenu.Item>
 
-        <NavigationMenu.Item>
-          <NavigationMenu.Link
-            className="NavigationMenuLink"
-            href="https://github.com/radix-ui"
-          >
-            Github
-          </NavigationMenu.Link>
-        </NavigationMenu.Item>
+         
+        <SignedIn>
+          <NavigationMenu.Item>
+            <NavigationMenu.Link
+              className="NavigationMenuLink"
+              >
+              <SignOutButton />
+            </NavigationMenu.Link>
+          </NavigationMenu.Item>
+        </SignedIn>
 
         <NavigationMenu.Indicator className="NavigationMenuIndicator">
           <div className="Arrow" />
