@@ -10,7 +10,8 @@
   display: flex;
   justify-content: center;
   width: 100vw;
-   /* z-index 11 because schedule page content is for some reason set to 10 */
+  /* z-index 11 because schedule page content is for some reason set to 10 
+  and breaking nav dropdown */
   z-index: 11;
 }
 
