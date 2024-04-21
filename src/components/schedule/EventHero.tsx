@@ -21,7 +21,7 @@ const EventHero:FC<EventHeroProps> = ({ event }) => {
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900"></div>
       </div>
-      <div className="relative py-24 px-4 sm:px-6 lg:px-8 text-white text-center h-full flex flex-col justify-end">
+      <div className="relative z-10 py-24 px-4 sm:px-6 lg:px-8 text-white text-center h-full flex flex-col justify-end">
         <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
           {event.name}
         </h1>
