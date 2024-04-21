@@ -39,7 +39,8 @@
   box-shadow: 0 0 0 2px var(--violet-7);
 }
 .NavigationMenuTrigger:hover,
-.NavigationMenuLink:hover {
+.NavigationMenuLink:hover,
+.NavigationMenuLink[data-active] {
   background-color: var(--violet-3);
 }
 

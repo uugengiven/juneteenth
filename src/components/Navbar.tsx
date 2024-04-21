@@ -1,7 +1,8 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import Link from 'next/link';
+import NextLink from 'next/link';
 import React, { ReactNode } from 'react';
 import Hamburger from './icons/Hamburger';
 import { SignedIn, UserButton, SignOutButton } from '@clerk/nextjs';
@@ -9,6 +10,17 @@ import classNames from 'classnames';
 import { CaretDownIcon } from '@radix-ui/react-icons';
 import './navlarge.css';
 
+const Link = ({ href, ...props }: {children: string, href: string}) => {
+  const pathname = usePathname();
+  const isActive = href === pathname;
+
+  return (
+    <NavigationMenu.Link asChild active={isActive}>
+      <NextLink href={href} className="NavigationMenuLink" {...props} />
+    </NavigationMenu.Link>
+  );
+};
+ 
 
 // ListItems in Nav Dropdown
 type ListItemType = { 
@@ -166,30 +178,15 @@ const Navbar = () => {
       <NavigationMenu.List className="NavigationMenuList">
 
         <NavigationMenu.Item>
-          <NavigationMenu.Link
-            className="NavigationMenuLink"
-            href="/"
-          >
-            Home
-          </NavigationMenu.Link>
+          <Link href="/">Home</Link>
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
-          <NavigationMenu.Link
-            className="NavigationMenuLink"
-            href="/#history"
-          >
-            About Juneteenth
-          </NavigationMenu.Link>
+          <Link href="/#history">About Juneteenth</Link>
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
-          <NavigationMenu.Link
-            className="NavigationMenuLink"
-            href="/schedule"
-          >
-            Schedule
-          </NavigationMenu.Link>
+          <Link href="/schedule">Schedule</Link>
         </NavigationMenu.Item>
       
         <NavigationMenu.Item>
@@ -215,28 +212,16 @@ const Navbar = () => {
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
-          <NavigationMenu.Link
-            className="NavigationMenuLink"
-            href="/vendor-application"
-          >
-            Vendor Signup
-          </NavigationMenu.Link>
+          <Link href="/vendor-application">Vendor Signup</Link>
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
-          <NavigationMenu.Link
-            className="NavigationMenuLink"
-            href="/sponsors"
-          >
-            Sponsors
-          </NavigationMenu.Link>
+          <Link href="/sponsors">Sponsors</Link>
         </NavigationMenu.Item>
      
         <SignedIn>
           <NavigationMenu.Item>
-            <NavigationMenu.Link
-              className="NavigationMenuLink"
-              >
+            <NavigationMenu.Link>
               <SignOutButton />
             </NavigationMenu.Link>
           </NavigationMenu.Item>
