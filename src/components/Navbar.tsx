@@ -3,8 +3,31 @@
 import Hamburger from './icons/Hamburger';
 import { SignedIn, UserButton, SignOutButton } from '@clerk/nextjs';
 import NavLarge from './NavLarge';
+import { NavItem } from './types';
 
 
+// Array of navigation items
+const navItems: Array<NavItem> = [
+  { name: 'Home', path: '/' },
+  { name: 'About Juneteenth', path: '/#history' },
+  { name: 'Schedule', path: '/schedule' },
+  { name: 'Maps', subItems: 
+    [
+      { title:"Juneteenth",
+        href:"downloads/juneteenth-map.pdf",
+        target:"_blank",
+        rel:"noopener noreferrer"
+      },
+      { title:"Youthfest",
+        href:"downloads/youth-fest-map.pdf",
+        target:"_blank",
+        rel:"noopener noreferrer"
+      },] 
+  },
+  { name: 'Vendor Signup', path: '/vendor-application' },
+  //  { name: 'Purchase Tickets', path: '/tickets' },
+  { name: 'Sponsors', path: '/sponsors' },
+];
 
 // const Navbar = () => {
 //   return (
@@ -136,7 +159,7 @@ const Navbar = () => {
       <div className='md:hidden flex'>
         <h3>small nav here</h3>
       </div>
-     <NavLarge/>
+     <NavLarge links={navItems}/>
     </header>
   );
 };

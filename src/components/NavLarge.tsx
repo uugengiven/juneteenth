@@ -1,34 +1,12 @@
 import { usePathname } from 'next/navigation';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import NextLink from 'next/link';
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { SignedIn, SignOutButton } from '@clerk/nextjs';
 import classNames from 'classnames';
 import { CaretDownIcon } from '@radix-ui/react-icons';
 import './navlarge.css';
-
-// NextLink with active path
-const Link = ({ href, ...props }: {children: string, href: string}) => {
-  const pathname = usePathname();
-  const isActive = href === pathname;
-
-  return (
-    <NavigationMenu.Link asChild active={isActive}>
-      <NextLink href={href} className="NavigationMenuLink" {...props} />
-    </NavigationMenu.Link>
-  );
-};
- 
-
-// ListItems in Nav Dropdown
-type ListItemType = { 
-  children?: ReactNode;
-  className?: string; 
-  href?: string; 
-  rel?: string; 
-  target?: string; 
-  title?: string; 
-}
+import { ListItemType, NavProps } from './types';
 
 const ListItem = 
   ({ className, rel, target, title, ...props }: ListItemType) => (
@@ -46,7 +24,27 @@ const ListItem =
     </li>
 );
 
-const NavLarge = () => {
+// NextLink with active path
+const Link = ({ href, ...props }: {children: string, href: string}) => {
+  const pathname = usePathname();
+  const isActive = href === pathname;
+
+  return (
+    <NavigationMenu.Link asChild active={isActive}>
+      <NextLink href={href} className="NavigationMenuLink" {...props} />
+    </NavigationMenu.Link>
+  );
+};
+ 
+
+
+
+const NavLarge = ({links}: NavProps) => {
+
+  console.log(links);
+  
+
+  
   return (
     <div className='hidden md:flex'>
       <NavigationMenu.Root className="NavigationMenuRoot">
