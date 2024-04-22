@@ -9,13 +9,13 @@ import './navlarge.css';
 import { ListItemType, NavProps } from './types';
 
 const ListItem = 
-  ({ className, rel, target, title, ...props }: ListItemType) => (
+  ({ className, title, ...props }: ListItemType) => (
     <li>
       <NavigationMenu.Link asChild>
         <a
           className={classNames('ListItemLink', className)}
-          rel={rel}
-          target={target}
+          rel="noopener noreferrer"
+          target="_blank"
           {...props}
         >
           <div className="ListItemHeading">{title}</div>
@@ -36,58 +36,35 @@ const Link = ({ href, ...props }: {children: string, href: string}) => {
   );
 };
  
-
 const NavLarge = ({links}: NavProps) => {
 
-  console.log(links);
-  
   return (
     <div className='hidden md:flex'>
       <NavigationMenu.Root className="NavigationMenuRoot">
         <NavigationMenu.List className="NavigationMenuList">
 
-          <NavigationMenu.Item>
-            <Link href="/">Home</Link>
-          </NavigationMenu.Item>
+          {links.map((item) => {
+            return (
+              <NavigationMenu.Item key={item.name}>
+                {item.path && <Link href={item.path}>{item.name}</Link>}
+                {item.subItems && 
+                  <>
+                  <NavigationMenu.Trigger className="NavigationMenuTrigger">
+                    {item.name} <CaretDownIcon className="CaretDown" aria-hidden />
+                  </NavigationMenu.Trigger>
+                   <NavigationMenu.Content className="NavigationMenuContent">
+                    <ul className="List">
+                      {item.subItems.map((item) => 
+                      <ListItem title={item.title} href={item.href}/>
+                      )}
+                    </ul>
+                  </NavigationMenu.Content>
+                  </>
+                }
+              </NavigationMenu.Item>
+            )
+          })}
 
-          <NavigationMenu.Item>
-            <Link href="/#history">About Juneteenth</Link>
-          </NavigationMenu.Item>
-
-          <NavigationMenu.Item>
-            <Link href="/schedule">Schedule</Link>
-          </NavigationMenu.Item>
-        
-          <NavigationMenu.Item>
-            <NavigationMenu.Trigger className="NavigationMenuTrigger">
-              Maps <CaretDownIcon className="CaretDown" aria-hidden />
-            </NavigationMenu.Trigger>
-            <NavigationMenu.Content className="NavigationMenuContent">
-              <ul className="List">
-                <ListItem
-                  title="Juneteenth"
-                  href="downloads/juneteenth-map.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-                <ListItem
-                  title="Youthfest"
-                  href="/downloads/youth-fest-map.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-              </ul>
-            </NavigationMenu.Content>
-          </NavigationMenu.Item>
-
-          <NavigationMenu.Item>
-            <Link href="/vendor-application">Vendor Signup</Link>
-          </NavigationMenu.Item>
-
-          <NavigationMenu.Item>
-            <Link href="/sponsors">Sponsors</Link>
-          </NavigationMenu.Item>
-      
           <SignedIn>
             <NavigationMenu.Item>
               <NavigationMenu.Link>

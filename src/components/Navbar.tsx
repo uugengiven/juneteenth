@@ -15,14 +15,11 @@ const navItems: Array<NavItem> = [
     [
       { title:"Juneteenth",
         href:"downloads/juneteenth-map.pdf",
-        target:"_blank",
-        rel:"noopener noreferrer"
       },
       { title:"Youthfest",
         href:"downloads/youth-fest-map.pdf",
-        target:"_blank",
-        rel:"noopener noreferrer"
-      },] 
+      },
+    ] 
   },
   { name: 'Vendor Signup', path: '/vendor-application' },
   //  { name: 'Purchase Tickets', path: '/tickets' },

@@ -5,8 +5,6 @@ export type ListItemType = {
   children?: ReactNode;
   className?: string; 
   href?: string; 
-  rel?: string; 
-  target?: string; 
   title?: string; 
 }
 
@@ -17,7 +15,7 @@ export type NavItem = {
   subItems?: Array<ListItemType>
 };
 
-// Nav type for receiving links data
+// Nav props type for receiving links data
 export type NavProps = {
   links: NavItem[]
 };
