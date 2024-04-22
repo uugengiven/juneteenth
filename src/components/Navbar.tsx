@@ -11,6 +11,7 @@ const navItems: Array<NavItem> = [
   { name: 'Home', path: '/' },
   { name: 'About Juneteenth', path: '/#history' },
   { name: 'Schedule', path: '/schedule' },
+  // Keep Maps near the middle due to a known bug in Radix
   { name: 'Maps', subItems: 
     [
       { title:"Juneteenth",
