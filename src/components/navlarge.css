@@ -4,7 +4,6 @@
 @import '@radix-ui/colors/purple.css';
 @import '@radix-ui/colors/violet.css';
 
-
 .NavigationMenuRoot {
   position: relative;
   display: flex;
@@ -276,4 +275,3 @@
     opacity: 0;
   }
 }
-

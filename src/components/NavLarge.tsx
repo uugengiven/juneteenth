@@ -8,24 +8,23 @@ import { CaretDownIcon } from '@radix-ui/react-icons';
 import './navlarge.css';
 import { ListItemType, NavProps } from './types';
 
-const ListItem = 
-  ({ className, title, ...props }: ListItemType) => (
-    <li>
-      <NavigationMenu.Link asChild>
-        <a
-          className={classNames('ListItemLink', className)}
-          rel="noopener noreferrer"
-          target="_blank"
-          {...props}
-        >
-          <div className="ListItemHeading">{title}</div>
-        </a>
-      </NavigationMenu.Link>
-    </li>
+const ListItem = ({ className, title, ...props }: ListItemType) => (
+  <li>
+    <NavigationMenu.Link asChild>
+      <a
+        className={classNames('ListItemLink', className)}
+        rel="noopener noreferrer"
+        target="_blank"
+        {...props}
+      >
+        <div className="ListItemHeading">{title}</div>
+      </a>
+    </NavigationMenu.Link>
+  </li>
 );
 
 // NextLink with active path
-const Link = ({ href, ...props }: {children: string, href: string}) => {
+const Link = ({ href, ...props }: { children: string; href: string }) => {
   const pathname = usePathname();
   const isActive = href === pathname;
 
@@ -35,34 +34,33 @@ const Link = ({ href, ...props }: {children: string, href: string}) => {
     </NavigationMenu.Link>
   );
 };
- 
-const NavLarge = ({links}: NavProps) => {
 
+const NavLarge = ({ links }: NavProps) => {
   return (
-    <div className='hidden md:flex'>
+    <div className="hidden md:flex">
       <NavigationMenu.Root className="NavigationMenuRoot">
         <NavigationMenu.List className="NavigationMenuList">
-
-          {links.map((item) => {
+          {links.map(item => {
             return (
               <NavigationMenu.Item key={item.name}>
                 {item.path && <Link href={item.path}>{item.name}</Link>}
-                {item.subItems && 
+                {item.subItems && (
                   <>
-                  <NavigationMenu.Trigger className="NavigationMenuTrigger">
-                    {item.name} <CaretDownIcon className="CaretDown" aria-hidden />
-                  </NavigationMenu.Trigger>
-                   <NavigationMenu.Content className="NavigationMenuContent">
-                    <ul className="List">
-                      {item.subItems.map((item) => 
-                      <ListItem title={item.title} href={item.href}/>
-                      )}
-                    </ul>
-                  </NavigationMenu.Content>
+                    <NavigationMenu.Trigger className="NavigationMenuTrigger">
+                      {item.name}{' '}
+                      <CaretDownIcon className="CaretDown" aria-hidden />
+                    </NavigationMenu.Trigger>
+                    <NavigationMenu.Content className="NavigationMenuContent">
+                      <ul className="List">
+                        {item.subItems.map(item => (
+                          <ListItem title={item.title} href={item.href} />
+                        ))}
+                      </ul>
+                    </NavigationMenu.Content>
                   </>
-                }
+                )}
               </NavigationMenu.Item>
-            )
+            );
           })}
 
           <SignedIn>
@@ -83,7 +81,7 @@ const NavLarge = ({links}: NavProps) => {
         </div>
       </NavigationMenu.Root>
     </div>
-  )
-}
+  );
+};
 
 export default NavLarge;

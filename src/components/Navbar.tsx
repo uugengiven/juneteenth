@@ -5,22 +5,18 @@ import { SignedIn, UserButton, SignOutButton } from '@clerk/nextjs';
 import NavLarge from './NavLarge';
 import { NavItem } from './types';
 
-
 // Array of navigation items
 const navItems: Array<NavItem> = [
   { name: 'Home', path: '/' },
   { name: 'About Juneteenth', path: '/#history' },
   { name: 'Schedule', path: '/schedule' },
   // Keep Maps near the middle due to a known bug in Radix
-  { name: 'Maps', subItems: 
-    [
-      { title:"Juneteenth",
-        href:"downloads/juneteenth-map.pdf",
-      },
-      { title:"Youthfest",
-        href:"downloads/youth-fest-map.pdf",
-      },
-    ] 
+  {
+    name: 'Maps',
+    subItems: [
+      { title: 'Juneteenth', href: 'downloads/juneteenth-map.pdf' },
+      { title: 'Youthfest', href: 'downloads/youth-fest-map.pdf' },
+    ],
   },
   { name: 'Vendor Signup', path: '/vendor-application' },
   //  { name: 'Purchase Tickets', path: '/tickets' },
@@ -150,18 +146,15 @@ const navItems: Array<NavItem> = [
 //   );
 // };
 
-
 const Navbar = () => {
   return (
-    <header className='bg-white py-1'>
-      <div className='md:hidden flex'>
+    <header className="bg-white py-1">
+      <div className="md:hidden flex">
         <h3>small nav here</h3>
       </div>
-     <NavLarge links={navItems}/>
+      <NavLarge links={navItems} />
     </header>
   );
 };
-
-
 
 export default Navbar;
