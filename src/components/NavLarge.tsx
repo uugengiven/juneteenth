@@ -37,13 +37,9 @@ const Link = ({ href, ...props }: {children: string, href: string}) => {
 };
  
 
-
-
 const NavLarge = ({links}: NavProps) => {
 
   console.log(links);
-  
-
   
   return (
     <div className='hidden md:flex'>
