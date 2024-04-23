@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 export type ListItemType = {
   children?: ReactNode;
   className?: string;
-  href?: string;
+  href: string;
   title?: string;
 };
 

@@ -5,8 +5,6 @@ import { NavProps } from './types';
 import Link from 'next/link';
 
 const NavSmall = ({ links }: NavProps) => {
-  console.log(links);
-
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
@@ -17,51 +15,50 @@ const NavSmall = ({ links }: NavProps) => {
 
       <DropdownMenu.Portal>
         <DropdownMenu.Content className="DropdownMenuContent" sideOffset={10}>
-          <DropdownMenu.Item asChild className="DropdownMenuItem">
-            <Link href="" className="">
-              Link Text
-            </Link>
-          </DropdownMenu.Item>
-
-          <DropdownMenu.Item className="DropdownMenuItem">
-            New Window
-          </DropdownMenu.Item>
-
-          <DropdownMenu.Item className="DropdownMenuItem">
-            New Private Window
-          </DropdownMenu.Item>
-          <DropdownMenu.Label className="DropdownMenuItem">
-            People
-          </DropdownMenu.Label>
-
-          <DropdownMenu.Separator className="DropdownMenuSeparator" />
-
-          <DropdownMenu.Sub>
-            <DropdownMenu.SubTrigger className="DropdownMenuSubTrigger">
-              Maps fake
-              <div className="RightSlot">
-                <ChevronRightIcon />
+          {links.map(item => {
+            return (
+              <div key={item.name}>
+                {item.path ? (
+                  <DropdownMenu.Item asChild className="DropdownMenuItem">
+                    <Link href={item.path}>{item.name}</Link>
+                  </DropdownMenu.Item>
+                ) : (
+                  <DropdownMenu.Sub>
+                    <DropdownMenu.SubTrigger className="DropdownMenuSubTrigger">
+                      {item.name}
+                      <div className="RightSlot">
+                        <ChevronRightIcon />
+                      </div>
+                    </DropdownMenu.SubTrigger>
+                    <DropdownMenu.Portal>
+                      <DropdownMenu.SubContent
+                        className="DropdownMenuSubContent"
+                        sideOffset={2}
+                        alignOffset={-5}
+                      >
+                        {item.subItems?.map(subItem => {
+                          return (
+                            <DropdownMenu.Item
+                              className="DropdownMenuItem"
+                              key={subItem.title}
+                            >
+                              <Link
+                                href={subItem.href}
+                                rel="noopener noreferrer"
+                                target="_blank"
+                              >
+                                {subItem.title}
+                              </Link>
+                            </DropdownMenu.Item>
+                          );
+                        })}
+                      </DropdownMenu.SubContent>
+                    </DropdownMenu.Portal>
+                  </DropdownMenu.Sub>
+                )}
               </div>
-            </DropdownMenu.SubTrigger>
-            <DropdownMenu.Portal>
-              <DropdownMenu.SubContent
-                className="DropdownMenuSubContent"
-                sideOffset={2}
-                alignOffset={-5}
-              >
-                <DropdownMenu.Item className="DropdownMenuItem">
-                  Save Page As
-                </DropdownMenu.Item>
-                <DropdownMenu.Item className="DropdownMenuItem">
-                  Create Shortcut…
-                </DropdownMenu.Item>
-                <DropdownMenu.Item className="DropdownMenuItem">
-                  Name Window…
-                </DropdownMenu.Item>
-                <DropdownMenu.Separator className="DropdownMenu.Separator" />
-              </DropdownMenu.SubContent>
-            </DropdownMenu.Portal>
-          </DropdownMenu.Sub>
+            );
+          })}
 
           <DropdownMenu.Arrow className="DropdownMenuArrow" />
         </DropdownMenu.Content>
