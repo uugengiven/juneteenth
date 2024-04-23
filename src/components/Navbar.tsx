@@ -150,8 +150,11 @@ const navItems: Array<NavItem> = [
 const Navbar = () => {
   return (
     <header className="bg-white py-1">
-      <nav className="md:hidden flex p-1">
+      <nav className="md:hidden flex w-full justify-between p-1">
         <NavSmall />
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
       </nav>
       <NavLarge links={navItems} />
     </header>
