@@ -1,9 +1,8 @@
 'use client';
 
-import Hamburger from './icons/Hamburger';
-import { SignedIn, UserButton, SignOutButton } from '@clerk/nextjs';
-import NavLarge from './NavLarge';
+import { SignedIn, UserButton } from '@clerk/nextjs';
 import { NavItem } from './types';
+import NavLarge from './NavLarge';
 import NavSmall from './NavSmall';
 
 // Array of navigation items
@@ -152,9 +151,11 @@ const Navbar = () => {
     <header className="bg-white py-1">
       <nav className="md:hidden flex w-full justify-between p-1">
         <NavSmall />
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
+        <div className="self-center">
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+        </div>
       </nav>
       <NavLarge links={navItems} />
     </header>
