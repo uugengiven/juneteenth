@@ -4,6 +4,7 @@ import Hamburger from './icons/Hamburger';
 import { SignedIn, UserButton, SignOutButton } from '@clerk/nextjs';
 import NavLarge from './NavLarge';
 import { NavItem } from './types';
+import NavSmall from './NavSmall';
 
 // Array of navigation items
 const navItems: Array<NavItem> = [
@@ -149,9 +150,9 @@ const navItems: Array<NavItem> = [
 const Navbar = () => {
   return (
     <header className="bg-white py-1">
-      <div className="md:hidden flex">
-        <h3>small nav here</h3>
-      </div>
+      <nav className="md:hidden flex p-1">
+        <NavSmall />
+      </nav>
       <NavLarge links={navItems} />
     </header>
   );
