@@ -2,6 +2,7 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { HamburgerMenuIcon, ChevronRightIcon } from '@radix-ui/react-icons';
 import './navsmall.css';
 import { NavProps } from './types';
+import Link from 'next/link';
 
 const NavSmall = ({ links }: NavProps) => {
   console.log(links);
@@ -15,19 +16,29 @@ const NavSmall = ({ links }: NavProps) => {
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className="DropdownMenuContent" sideOffset={5}>
+        <DropdownMenu.Content className="DropdownMenuContent" sideOffset={10}>
+          <DropdownMenu.Item asChild className="DropdownMenuItem">
+            <Link href="" className="">
+              Link Text
+            </Link>
+          </DropdownMenu.Item>
+
           <DropdownMenu.Item className="DropdownMenuItem">
-            New Tab <div className="RightSlot">⌘+T</div>
+            New Window
           </DropdownMenu.Item>
+
           <DropdownMenu.Item className="DropdownMenuItem">
-            New Window <div className="RightSlot">⌘+N</div>
+            New Private Window
           </DropdownMenu.Item>
-          <DropdownMenu.Item className="DropdownMenuItem" disabled>
-            New Private Window <div className="RightSlot">⇧+⌘+N</div>
-          </DropdownMenu.Item>
+          <DropdownMenu.Label className="DropdownMenuItem">
+            People
+          </DropdownMenu.Label>
+
+          <DropdownMenu.Separator className="DropdownMenuSeparator" />
+
           <DropdownMenu.Sub>
             <DropdownMenu.SubTrigger className="DropdownMenuSubTrigger">
-              More Tools
+              Maps fake
               <div className="RightSlot">
                 <ChevronRightIcon />
               </div>
@@ -39,7 +50,7 @@ const NavSmall = ({ links }: NavProps) => {
                 alignOffset={-5}
               >
                 <DropdownMenu.Item className="DropdownMenuItem">
-                  Save Page As… <div className="RightSlot">⌘+S</div>
+                  Save Page As
                 </DropdownMenu.Item>
                 <DropdownMenu.Item className="DropdownMenuItem">
                   Create Shortcut…
@@ -48,18 +59,9 @@ const NavSmall = ({ links }: NavProps) => {
                   Name Window…
                 </DropdownMenu.Item>
                 <DropdownMenu.Separator className="DropdownMenu.Separator" />
-                <DropdownMenu.Item className="DropdownMenuItem">
-                  Developer Tools
-                </DropdownMenu.Item>
               </DropdownMenu.SubContent>
             </DropdownMenu.Portal>
           </DropdownMenu.Sub>
-
-          <DropdownMenu.Separator className="DropdownMenuSeparator" />
-
-          <DropdownMenu.Label className="DropdownMenuLabel">
-            People
-          </DropdownMenu.Label>
 
           <DropdownMenu.Arrow className="DropdownMenuArrow" />
         </DropdownMenu.Content>
