@@ -1,7 +1,6 @@
 import { usePathname } from 'next/navigation';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import NextLink from 'next/link';
-import React from 'react';
 import { SignedIn, SignOutButton } from '@clerk/nextjs';
 import classNames from 'classnames';
 import { CaretDownIcon } from '@radix-ui/react-icons';
@@ -52,8 +51,12 @@ const NavLarge = ({ links }: NavProps) => {
                     </NavigationMenu.Trigger>
                     <NavigationMenu.Content className="NavigationMenuContent">
                       <ul className="List">
-                        {item.subItems.map(item => (
-                          <ListItem title={item.title} href={item.href} />
+                        {item.subItems.map(subItem => (
+                          <ListItem
+                            title={subItem.title}
+                            href={subItem.href}
+                            key={subItem.title}
+                          />
                         ))}
                       </ul>
                     </NavigationMenu.Content>

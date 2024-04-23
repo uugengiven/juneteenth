@@ -1,12 +1,15 @@
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { HamburgerMenuIcon, ChevronRightIcon } from '@radix-ui/react-icons';
 import './navsmall.css';
+import { NavProps } from './types';
 
-const NavSmall = () => {
+const NavSmall = ({ links }: NavProps) => {
+  console.log(links);
+
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
-        <button className="IconButton" aria-label="open mobile nav">
+        <button className="IconButton" aria-label="toggle mobile nav">
           <HamburgerMenuIcon />
         </button>
       </DropdownMenu.Trigger>

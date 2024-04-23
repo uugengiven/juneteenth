@@ -150,7 +150,7 @@ const Navbar = () => {
   return (
     <header className="bg-white py-1">
       <nav className="md:hidden flex w-full justify-between p-1">
-        <NavSmall />
+        <NavSmall links={navItems} />
         <div className="self-center">
           <SignedIn>
             <UserButton />
