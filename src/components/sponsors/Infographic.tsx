@@ -91,7 +91,7 @@ const Infographic: React.FC = () => {
             </li>
           </ul>
         </div>
-        <div className="w-100 md:w-1/2 p-4 bg-purple-100 rounded-e-lg">
+        <div className="w-full md:w-1/2 p-4 bg-purple-100 rounded-e-lg">
           <h3 className="text-3xl font-bold mb-4 text-center">
             Out of Town Visitors
           </h3>
