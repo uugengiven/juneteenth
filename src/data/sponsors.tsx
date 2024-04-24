@@ -3,7 +3,7 @@ const sponsors = [
       "name": "AAA",
       "websiteUrl": "https://www.aaa.com",
       "imageUrl": "/images/sponsors/aaa.png",
-      "visible": false
+      "visible": true
     },
     {
       "name": "DOLLAR BANK",
