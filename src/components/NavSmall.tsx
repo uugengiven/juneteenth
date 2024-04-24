@@ -14,7 +14,11 @@ const NavSmall = ({ links }: NavProps) => {
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className="DropdownMenuContent" sideOffset={10}>
+        <DropdownMenu.Content
+          className="DropdownMenuContent"
+          align="start"
+          sideOffset={10}
+        >
           {links.map(item => {
             return (
               <div key={item.name}>
