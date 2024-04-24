@@ -37,8 +37,8 @@ const NavSmall = ({ links }: NavProps) => {
                     <DropdownMenu.Portal>
                       <DropdownMenu.SubContent
                         className="DropdownMenuSubContent"
-                        sideOffset={2}
-                        alignOffset={-5}
+                        sideOffset={6}
+                        alignOffset={-2}
                       >
                         {item.subItems?.map(subItem => {
                           return (
