@@ -95,8 +95,8 @@ const Infographic: React.FC = () => {
           <h3 className="text-3xl font-bold mb-4 text-center">
             Out of Town Visitors
           </h3>
-          <div className="flex justify-between mb-4">
-            <div className="bg-white rounded-lg p-4 w-1/2 mr-4 relative">
+          <div className="flex flex-wrap md:flex-nowrap justify-between mb-4">
+            <div className="bg-white rounded-lg p-4 w-full mr-0 md:mr-4 mb-4 md:mb-0 md:w-1/2 relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
@@ -109,7 +109,7 @@ const Infographic: React.FC = () => {
                 <p className="text-lg">Average time spent in county</p>
               </div>
             </div>
-            <div className="bg-white rounded-lg p-4 relative w-1/2">
+            <div className="bg-white rounded-lg p-4 w-full md:w-1/2 relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -127,7 +127,7 @@ const Infographic: React.FC = () => {
             <h4 className="text-xl font-bold mb-2">
               Top Visitor Origin Markets
             </h4>
-            <ol className="text-md md:text-lg list-decimal pl-4">
+            <ol className="text-sm sm:text-lg list-decimal pl-4">
               <li>Youngstown</li>
               <li>Wheeling/Stuebenville</li>
               <li>Philadelphia</li>
