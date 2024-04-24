@@ -127,7 +127,7 @@ const Infographic: React.FC = () => {
             <h4 className="text-xl font-bold mb-2">
               Top Visitor Origin Markets
             </h4>
-            <ol className="text-lg list-decimal pl-8">
+            <ol className="text-md md:text-lg list-decimal pl-4">
               <li>Youngstown</li>
               <li>Wheeling/Stuebenville</li>
               <li>Philadelphia</li>
