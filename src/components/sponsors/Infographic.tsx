@@ -2,8 +2,8 @@ const Infographic: React.FC = () => {
   return (
     <div className="flex flex-col space-y-8">
       {/* Top section */}
-      <div className="flex justify-between bg-blue-100 rounded-lg p-6">
-        <div className="w-1/2 p-4 rounded-lg">
+      <div className="flex flex-wrap justify-between bg-blue-100 rounded-lg p-1 md:p-6">
+        <div className="w-100 md:w-1/2 p-1 md:p-4 rounded-lg">
           <h2 className="text-3xl font-bold mb-2 px-4">
             Homecoming Celebration 2023
           </h2>
@@ -11,7 +11,7 @@ const Infographic: React.FC = () => {
             Event Dates: June 14-16
           </h2>
         </div>
-        <div className="w-1/2 p-4 text-center">
+        <div className="w-100 md:w-1/2 p-4 text-center">
           <span className="text-5xl font-bold text-green-500">
             $3.49 Million
           </span>
