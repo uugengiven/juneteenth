@@ -61,11 +61,13 @@ const SponsorshipPage = () => {
           </div>
         </div>
         <div className="p-8 rounded-lg bg-slate-100">
-          <h2 className="text-6xl text-center m-4">2023 Juneteenth Impact</h2>
+          <h2 className="text-4xl md:text-6xl text-center m-4">
+            2023 Juneteenth Impact
+          </h2>
           <Infographic />
         </div>
         <div className="flex flex-col my-12">
-          <h2 className="text-6xl text-center font-black">
+          <h2 className="text-4xl md:text-6xl text-center font-black">
             Sponsorship Packages
           </h2>
           {SponsorshipPackageData.map((packageData, index) => (
