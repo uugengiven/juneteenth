@@ -3,7 +3,7 @@ const Infographic: React.FC = () => {
     <div className="flex flex-col space-y-8">
       {/* Top section */}
       <div className="flex flex-wrap justify-between bg-blue-100 rounded-lg p-1 md:p-6">
-        <div className="w-100 md:w-1/2 p-1 md:p-4 rounded-lg">
+        <div className="w-full md:w-1/2 p-1 md:p-4 rounded-lg">
           <h2 className="text-3xl font-bold mb-2 px-4">
             Homecoming Celebration 2023
           </h2>
@@ -11,7 +11,7 @@ const Infographic: React.FC = () => {
             Event Dates: June 14-16
           </h2>
         </div>
-        <div className="w-100 md:w-1/2 p-4 text-center">
+        <div className="w-full md:w-1/2 p-4 text-center">
           <span className="text-5xl font-bold text-green-500">
             $3.49 Million
           </span>
@@ -33,13 +33,13 @@ const Infographic: React.FC = () => {
       </div>
 
       {/* Third section */}
-      <div className="flex justify-between">
-        <div className="w-1/2 p-4 bg-yellow-100 rounded-l-lg text-center">
+      <div className="flex flex-wrap justify-between">
+        <div className="w-full md:w-1/2 p-4 bg-yellow-100 rounded-l-lg text-center">
           <h3 className="text-4xl font-bold mb-4 text-blue-700">
             Major Spend by Category
           </h3>
           <ul className="flex flex-wrap justify-center">
-            <li className="flex flex-col items-center mb-4 w-1/2">
+            <li className="flex flex-col items-center mb-4 w-full md:w-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 640 512"
@@ -49,7 +49,7 @@ const Infographic: React.FC = () => {
               </svg>
               <span className="text-3xl text-center">$669K</span>
             </li>
-            <li className="flex flex-col items-center mb-4 w-1/2">
+            <li className="flex flex-col items-center mb-4 w-full md:w-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 640 512"
@@ -59,7 +59,7 @@ const Infographic: React.FC = () => {
               </svg>
               <span className="text-3xl text-center">$290K</span>
             </li>
-            <li className="flex flex-col items-center mb-4 w-1/2">
+            <li className="flex flex-col items-center mb-4 w-full md:w-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 640 512"
@@ -69,7 +69,7 @@ const Infographic: React.FC = () => {
               </svg>
               <span className="text-3xl text-center">$1.66M</span>
             </li>
-            <li className="flex flex-col items-center mb-4 w-1/2">
+            <li className="flex flex-col items-center mb-4 w-full md:w-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 640 512"
@@ -79,7 +79,7 @@ const Infographic: React.FC = () => {
               </svg>
               <span className="text-3xl text-center">$406K</span>
             </li>
-            <li className="flex flex-col items-center mb-4 w-1/2">
+            <li className="flex flex-col items-center mb-4 w-full md:w-1/2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 640 512"
@@ -91,7 +91,7 @@ const Infographic: React.FC = () => {
             </li>
           </ul>
         </div>
-        <div className="w-1/2 p-4 bg-purple-100 rounded-e-lg">
+        <div className="w-100 md:w-1/2 p-4 bg-purple-100 rounded-e-lg">
           <h3 className="text-3xl font-bold mb-4 text-center">
             Out of Town Visitors
           </h3>
