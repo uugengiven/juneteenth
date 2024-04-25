@@ -46,7 +46,7 @@ const NavLarge = ({ links }: NavProps) => {
                 {item.subItems && (
                   <>
                     <NavigationMenu.Trigger className="NavigationMenuTrigger">
-                      {item.name}{' '}
+                      {item.name}
                       <CaretDownIcon className="CaretDown" aria-hidden />
                     </NavigationMenu.Trigger>
                     <NavigationMenu.Content className="NavigationMenuContent">

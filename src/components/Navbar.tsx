@@ -25,7 +25,7 @@ const navItems: Array<NavItem> = [
 
 const Navbar = () => {
   return (
-    <header className="bg-white py-1">
+    <header className="bg-red-700 py-1">
       <nav className="md:hidden flex w-full justify-between p-1">
         <NavSmall links={navItems} />
         <div className="self-center">
