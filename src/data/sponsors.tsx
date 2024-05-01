@@ -136,6 +136,18 @@ const sponsors = [
       "websiteUrl": "https://metrocommunityhealthcenter.org/",
       "imageUrl": "/images/sponsors/metro.png",
       "visible": true
+    },
+    {
+      "name": "The Consult Box",
+      "websiteUrl": "https://theconsultbox.com/",
+      "imageUrl": "/images/sponsors/tcb.png",
+      "visible": true
+    },
+    {
+      "name": "Looking for Group Pittsburgh",
+      "websiteUrl": "https://lfgpgh.com/",
+      "imageUrl": "/images/sponsors/lfgpgh.png",
+      "visible": true
     }
   ];
 
