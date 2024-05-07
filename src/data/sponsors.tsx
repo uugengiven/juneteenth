@@ -1,5 +1,23 @@
 const sponsors = [
     {
+      "name": "Highmark",
+      "websiteUrl": "https://www.highmark.com/",
+      "imageUrl": "/images/sponsors/highmark.png",
+      "visible": true
+    },
+    {
+      "name": "Heinz Endowments",
+      "websiteUrl": "https://www.heinz.org/",
+      "imageUrl": "/images/sponsors/heinzendowments.svg",
+      "visible": true
+    },
+    {
+      "name": "Citizens Bank",
+      "websiteUrl": "https://www.citizensbank.com",
+      "imageUrl": "/images/sponsors/citizens.svg",
+      "visible": true
+    },
+    {
       "name": "AAA",
       "websiteUrl": "https://www.aaa.com",
       "imageUrl": "/images/sponsors/aaa.png",
@@ -98,7 +116,7 @@ const sponsors = [
     {
       "name": "UPMC",
       "websiteUrl": "https://www.upmc.com/",
-      "imageUrl": "/images/sponsors/upmc.jpg",
+      "imageUrl": "/images/sponsors/upmc.png",
       "visible": true
     },
     {
@@ -111,12 +129,6 @@ const sponsors = [
       "name": "Hillman Foundation",
       "websiteUrl": "https://hillmanfoundation.com/",
       "imageUrl": "/images/sponsors/hillman.png",
-      "visible": true
-    },
-    {
-      "name": "Highmark",
-      "websiteUrl": "https://www.highmark.com/",
-      "imageUrl": "/images/sponsors/highmark.png",
       "visible": true
     },
     {
@@ -147,6 +159,60 @@ const sponsors = [
       "name": "Looking for Group Pittsburgh",
       "websiteUrl": "https://lfgpgh.com/",
       "imageUrl": "/images/sponsors/lfgpgh.png",
+      "visible": true
+    },
+    {
+      "name": "VisitPittsburgh",
+      "websiteUrl": "https://www.visitpittsburgh.com/",
+      "imageUrl": "/images/sponsors/visitpittsburgh.jpg",
+      "visible": true
+    },
+    {
+      "name": "Vibrant Pittsburgh",
+      "websiteUrl": "https://vibrantpittsburgh.org/",
+      "imageUrl": "/images/sponsors/vibrantpittsburgh.png",
+      "visible": true
+    },
+    {
+      "name": "PNC Bank",
+      "websiteUrl": "https://www.pnc.com/",
+      "imageUrl": "/images/sponsors/pnc.png",
+      "visible": true
+    },
+    {
+      "name": "Partners for Quality",
+      "websiteUrl": "https://pfq.org/",
+      "imageUrl": "/images/sponsors/pfq.jpg",
+      "visible": true
+    },
+    {
+      "name": "URA",
+      "websiteUrl": "https://ura.org/",
+      "imageUrl": "/images/sponsors/ura.jpg",
+      "visible": true
+    },
+    {
+      "name": "Duolingo",
+      "websiteUrl": "https://www.duolingo.com/",
+      "imageUrl": "/images/sponsors/duolingo.png",
+      "visible": true
+    },
+    {
+      "name": "PPG",
+      "websiteUrl": "https://www.ppg.com",
+      "imageUrl": "/images/sponsors/ppg.png",
+      "visible": true
+    },
+    {
+      "name": "Allegheny County",
+      "websiteUrl": "https://www.alleghenycounty.us",
+      "imageUrl": "/images/sponsors/alleghenycounty.png",
+      "visible": true
+    },
+    {
+      "name": "Giant Eagle",
+      "websiteUrl": "https://www.gianteagle.com/",
+      "imageUrl": "/images/sponsors/gianteagle.png",
       "visible": true
     }
   ];
