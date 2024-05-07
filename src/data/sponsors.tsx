@@ -214,6 +214,12 @@ const sponsors = [
       "websiteUrl": "https://www.gianteagle.com/",
       "imageUrl": "/images/sponsors/gianteagle.png",
       "visible": true
+    },
+    {
+      "name": "AARP",
+      "websiteUrl": "https://www.aarp.org/",
+      "imageUrl": "/images/sponsors/aarp.png",
+      "visible": true
     }
   ];
 
