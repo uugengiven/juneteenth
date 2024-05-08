@@ -220,6 +220,18 @@ const sponsors = [
       "websiteUrl": "https://www.aarp.org/",
       "imageUrl": "/images/sponsors/aarp.png",
       "visible": true
+    },
+    {
+      "name": "Google",
+      "websiteUrl": "https://www.google.com/",
+      "imageUrl": "/images/sponsors/google.png",
+      "visible": true
+    },
+    {
+      "name": "Post-Gazette",
+      "websiteUrl": "https://www.post-gazette.com/",
+      "imageUrl": "/images/sponsors/postgazette.jpg",
+      "visible": true
     }
   ];
 
