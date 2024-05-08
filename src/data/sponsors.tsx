@@ -15,7 +15,7 @@ const sponsors = [
       "name": "Citizens Bank",
       "websiteUrl": "https://www.citizensbank.com",
       "imageUrl": "/images/sponsors/citizens.svg",
-      "visible": true
+      "visible": false
     },
     {
       "name": "AAA",
@@ -225,7 +225,7 @@ const sponsors = [
       "name": "Google",
       "websiteUrl": "https://www.google.com/",
       "imageUrl": "/images/sponsors/google.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Post-Gazette",
