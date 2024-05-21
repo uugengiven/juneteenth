@@ -232,6 +232,12 @@ const sponsors = [
       "websiteUrl": "https://www.post-gazette.com/",
       "imageUrl": "/images/sponsors/postgazette.jpg",
       "visible": true
+    },
+    {
+      "name": "TribLive",
+      "websiteUrl": "https://www.triblive.com/",
+      "imageUrl": "/images/sponsors/trib.jpg",
+      "visible": true
     }
   ];
 
