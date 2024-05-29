@@ -15,7 +15,7 @@ const sponsors = [
       "name": "Citizens Bank",
       "websiteUrl": "https://www.citizensbank.com",
       "imageUrl": "/images/sponsors/citizens.svg",
-      "visible": false
+      "visible": true
     },
     {
       "name": "AAA",
@@ -225,7 +225,7 @@ const sponsors = [
       "name": "Google",
       "websiteUrl": "https://www.google.com/",
       "imageUrl": "/images/sponsors/google.png",
-      "visible": false
+      "visible": true
     },
     {
       "name": "Post-Gazette",
@@ -237,6 +237,18 @@ const sponsors = [
       "name": "TribLive",
       "websiteUrl": "https://www.triblive.com/",
       "imageUrl": "/images/sponsors/trib.jpg",
+      "visible": true
+    },
+    {
+      "name": "Riverhounds",
+      "websiteUrl": "https://www.riverhounds.com/",
+      "imageUrl": "/images/sponsors/riverhounds.png",
+      "visible": true
+    },
+    {
+      "name": "CNX Academy",
+      "websiteUrl": "https://www.cnx.com/about-us/the_mentorship-academy",
+      "imageUrl": "/images/sponsors/mentorshipacademy.png",
       "visible": true
     }
   ];
