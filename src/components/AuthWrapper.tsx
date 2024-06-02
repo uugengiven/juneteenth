@@ -2,7 +2,7 @@
 import { auth, currentUser } from '@clerk/nextjs';
 import { redirect } from 'next/navigation';
 
-const allowedEmails = ['lange.john.m@gmail.com'];
+const allowedEmails = ['lange.john.m@gmail.com', 'stoptheviolencepgh@yahoo.com', 'bogey@theconsultbox.com'];
 
 const AuthWrapper = <P extends {}>(Component: React.ComponentType<P>) => {
   const WrappedComponent = async (props: P) => {
