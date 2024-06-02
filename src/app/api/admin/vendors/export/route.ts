@@ -6,8 +6,8 @@ export async function GET() {
   const vendorForms = await VendorApplication.findAll();
 
   const csvData = vendorForms.map((form) => [
-    form.name,
-    form.companyName,
+    `"${form.name}"`,
+    `"${form.companyName}"`,
     form.email,
     form.phoneNumber,
     form.boothSize,
