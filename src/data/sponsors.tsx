@@ -14,7 +14,7 @@ const sponsors = [
     {
       "name": "Citizens Bank",
       "websiteUrl": "https://www.citizensbank.com",
-      "imageUrl": "/images/sponsors/citizens.svg",
+      "imageUrl": "/images/sponsors/citizens.png",
       "visible": true
     },
     {
@@ -81,7 +81,7 @@ const sponsors = [
       "name": "FNB",
       "websiteUrl": "https://www.fnb-online.com",
       "imageUrl": "/images/sponsors/firstnationalbank.png",
-      "visible": false
+      "visible": true
     },
     {
       "name": "Truelieve",
