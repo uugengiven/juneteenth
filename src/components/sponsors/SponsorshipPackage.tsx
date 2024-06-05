@@ -40,8 +40,8 @@ const SponsorshipPackage: React.FC<SponsorshipPackageProps> = ({
       <p className={`${textColor} text-4xl font-semibold mb-6`}>
         Investment: {investment}
       </p>
-      <div className="flex">
-        <div className="w-1/2 text-left relative">
+      <div className="flex flex-wrap md:mt-20">
+        <div className="order-2 md:order-1 w-full md:w-1/2 text-left relative">
           <div
             className={`absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-slate-200 to-${color} mr-4`}
           ></div>
@@ -53,7 +53,7 @@ const SponsorshipPackage: React.FC<SponsorshipPackageProps> = ({
             ))}
           </ul>
         </div>
-        <div className="w-1/2 align-middle">
+        <div className="order-1 md:order-2 w-full md:w-1/2 align-middle">
           <div className="flex flex-wrap justify-center align-middle my-12">
             {images.map((image, index) => (
               <Image
