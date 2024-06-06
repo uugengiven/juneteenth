@@ -6,7 +6,7 @@ button {
 .DropdownMenuContent,
 .DropdownMenuSubContent {
   min-width: 160px;
-  background-color: #d32f2f;
+  background-color: #b91c1c;
   border-radius: 6px;
   padding: 5px;
   box-shadow: 0px 10px 38px -10px rgba(22, 23, 24, 0.35),
@@ -73,7 +73,7 @@ button {
 }
 
 .DropdownMenuArrow {
-  fill: #d32f2f;
+  fill: #b91c1c;
 }
 
 .IconButton {
