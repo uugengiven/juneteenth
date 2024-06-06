@@ -4,6 +4,7 @@ const EventTypes:string[] = [
     "Parade",
     "Market",
     "Sponsor Event",
+    "Youth Fest"
 ];
 
 export default EventTypes;
