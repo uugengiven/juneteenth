@@ -14,7 +14,7 @@ const DollarBank = () => {
       </div>
       <div className="aspect-video mx-4 rounded-lg overflow-hidden w-1/2 my-6">
               <iframe
-              src="https://www.youtube.com/embed/SjnFdRibjks?si=RuplTlZBaC9RVlKe"
+              src="https://www.youtube.com/embed/vomubbNLxs0?si=_RzFcN3d4CSFLZk9"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
