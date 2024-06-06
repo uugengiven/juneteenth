@@ -24,11 +24,12 @@ const Home: NextPage = async () => {
         ctaLink="/schedule"
       />
       <FeaturedEvents events={events} />
-      <RecapSection />
+      
+      <DollarBank />
       <SawTeethDivider />
       <SponsorsSection />
       <JuneteenthHistory />
-      <DollarBank />
+      <RecapSection />
       <VendorSponsorshipSection />
       <Footer />
     </>

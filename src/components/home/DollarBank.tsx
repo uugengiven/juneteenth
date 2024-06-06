@@ -4,11 +4,11 @@ import Image from "next/image";
 
 const DollarBank = () => {
   return (
-    <section className="w-full flex flex-col justify-center items-center mb-12">
+    <section className="w-full flex flex-col justify-center items-center pb-12 bg-gray-900">
       <div className="w-full flex flex-col justify-center items-center bg-slate-700 py-6 text-white">
       <div className="w-2/3 h-1 bg-gradient-to-r from-red-700 via-orange-500 to-yellow-400 mb-6"></div>
       <Image src="/images/sponsors/dollarbank_clear.png" alt="Dollar Bank Logo" width={400} height={400} />
-      <div className="text-lg">presents the</div>
+      <div className="text-lg font-light">presents the</div>
       <h2 className={`text-5xl pb-4 ${montserrat.className}`}>Small Business Vendor Plaza</h2>
       <div className="w-2/3 h-1 bg-gradient-to-l from-red-700 via-orange-500 to-yellow-400"></div>
       </div>
