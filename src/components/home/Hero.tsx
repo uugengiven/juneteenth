@@ -11,7 +11,7 @@ interface HeroProps {
 }
 
 const Hero: FC<HeroProps> = ({ title, description, ctaText, ctaLink }) => {
-  const eventDate = "6/15/2024 12:00:00 PM";
+  const eventDate = "6/19/2025 12:00:00 PM";
   return (
     <section className="relative bg-red-700 text-white">
       <div className="absolute inset-0">
@@ -38,7 +38,7 @@ const Hero: FC<HeroProps> = ({ title, description, ctaText, ctaLink }) => {
           </a>
         </div>
         <div className="mt-10">
-          <h2 className={`text-5xl mb-3 font-heavy`}>June 14th-16th, 2024</h2>
+          <h2 className={`text-5xl mb-3 font-heavy`}>June 19th-22nd, 2025</h2>
           <CountdownTimer date={eventDate} />
         </div>
       </div>
