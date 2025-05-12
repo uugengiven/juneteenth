@@ -32,7 +32,7 @@ const Home: NextPage = async () => {
       <RecapSection />
       <VendorSponsorshipSection />
       <Footer />
-      <ToastNotification />
+      {/* <ToastNotification /> */}
     </>
   );
 };
