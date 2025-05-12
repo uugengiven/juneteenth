@@ -27,9 +27,9 @@ const Home: NextPage = async () => {
       <FeaturedEvents events={events} />
       {/* <DollarBank /> */}
       <SawTeethDivider />
+      <RecapSection />
       <SponsorsSection />
       <JuneteenthHistory />
-      <RecapSection />
       <VendorSponsorshipSection />
       <Footer />
       {/* <ToastNotification /> */}
