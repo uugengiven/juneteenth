@@ -20,7 +20,7 @@ const Home: NextPage = async () => {
       <Navbar />
       <Hero
         title="Juneteenth Celebration"
-        description="Join us for a 3-day event filled with music, vendors, classes, a parade, and more!"
+        description="Join us for a 4-day event filled with music, vendors, classes, a parade, and more!"
         ctaText="View Schedule"
         ctaLink="/schedule"
       />
