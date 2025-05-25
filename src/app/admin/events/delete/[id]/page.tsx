@@ -23,7 +23,7 @@ const DeleteEventPage: React.FC<EditEventPageProps> = async ({ params }) => {
       <h1 className="text-2xl font-bold mb-4">Delete Event</h1>
       <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4">
         <strong className="font-bold">Warning!</strong>
-        <span className="block sm:inline">Are you sure you want to delete the event "{event.name}"?</span>
+        <span className="block sm:inline">Are you sure you want to delete the event {event.name}?</span>
       </div>
         <form
             action={`/api/admin/events/${eventId}`}
