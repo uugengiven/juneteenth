@@ -3,13 +3,13 @@ const sponsors = [
       "name": "Highmark",
       "websiteUrl": "https://www.highmark.com/",
       "imageUrl": "/images/sponsors/highmark.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Heinz Endowments",
       "websiteUrl": "https://www.heinz.org/",
       "imageUrl": "/images/sponsors/heinzendowments.svg",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Citizens Bank",
@@ -84,7 +84,7 @@ const sponsors = [
       "visible": true
     },
     {
-      "name": "Truelieve",
+      "name": "Trulieve",
       "websiteUrl": "https://www.trulieve.com",
       "imageUrl": "/images/sponsors/trulieve.jpg",
       "visible": false
@@ -117,37 +117,37 @@ const sponsors = [
       "name": "UPMC",
       "websiteUrl": "https://www.upmc.com/",
       "imageUrl": "/images/sponsors/upmc.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "AEO Foundation",
       "websiteUrl": "https://www.aeo-inc.com/aeo-foundation/",
       "imageUrl": "/images/sponsors/aeofoundation.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Hillman Foundation",
       "websiteUrl": "https://hillmanfoundation.com/",
       "imageUrl": "/images/sponsors/hillman.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Target",
       "websiteUrl": "https://www.target.com",
       "imageUrl": "/images/sponsors/target.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Pittsburgh Regional Transit",
       "websiteUrl": "https://www.rideprt.org/",
       "imageUrl": "/images/sponsors/prt.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Metro Community Health Center",
       "websiteUrl": "https://metrocommunityhealthcenter.org/",
       "imageUrl": "/images/sponsors/metro.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "The Consult Box",
@@ -165,61 +165,61 @@ const sponsors = [
       "name": "VisitPittsburgh",
       "websiteUrl": "https://www.visitpittsburgh.com/",
       "imageUrl": "/images/sponsors/visitpittsburgh.jpg",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Vibrant Pittsburgh",
       "websiteUrl": "https://vibrantpittsburgh.org/",
       "imageUrl": "/images/sponsors/vibrantpittsburgh.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "PNC Bank",
       "websiteUrl": "https://www.pnc.com/",
       "imageUrl": "/images/sponsors/pnc.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Partners for Quality",
       "websiteUrl": "https://pfq.org/",
       "imageUrl": "/images/sponsors/pfq.jpg",
-      "visible": true
+      "visible": false
     },
     {
       "name": "URA",
       "websiteUrl": "https://ura.org/",
       "imageUrl": "/images/sponsors/ura.jpg",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Duolingo",
       "websiteUrl": "https://www.duolingo.com/",
       "imageUrl": "/images/sponsors/duolingo.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "PPG",
       "websiteUrl": "https://www.ppg.com",
       "imageUrl": "/images/sponsors/ppg.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Allegheny County",
       "websiteUrl": "https://www.alleghenycounty.us",
       "imageUrl": "/images/sponsors/alleghenycounty.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Giant Eagle",
       "websiteUrl": "https://www.gianteagle.com/",
       "imageUrl": "/images/sponsors/gianteagle.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "AARP",
       "websiteUrl": "https://www.aarp.org/",
       "imageUrl": "/images/sponsors/aarp.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Google",
@@ -231,24 +231,30 @@ const sponsors = [
       "name": "Post-Gazette",
       "websiteUrl": "https://www.post-gazette.com/",
       "imageUrl": "/images/sponsors/postgazette.jpg",
-      "visible": true
+      "visible": false
     },
     {
       "name": "TribLive",
       "websiteUrl": "https://www.triblive.com/",
       "imageUrl": "/images/sponsors/trib.jpg",
-      "visible": true
+      "visible": false
     },
     {
       "name": "Riverhounds",
       "websiteUrl": "https://www.riverhounds.com/",
       "imageUrl": "/images/sponsors/riverhounds.png",
-      "visible": true
+      "visible": false
     },
     {
       "name": "CNX Academy",
       "websiteUrl": "https://www.cnx.com/about-us/the_mentorship-academy",
       "imageUrl": "/images/sponsors/mentorshipacademy.png",
+      "visible": false
+    },
+        {
+      "name": "People's Gas",
+      "websiteUrl": "https://www.peoples-gas.com/",
+      "imageUrl": "/images/sponsors/peoplesgas.png",
       "visible": true
     }
   ];
