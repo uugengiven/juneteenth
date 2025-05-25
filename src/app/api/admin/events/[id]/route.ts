@@ -46,3 +46,21 @@ export async function PUT(request: Request, { params }: { params: Params }) {
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }
+export async function POST(_request: Request, { params }: { params: Params }) {
+  const eventId = parseInt(params.id);
+
+  try {
+    const event = await Event.findByPk(eventId);
+
+    if (!event) {
+      return NextResponse.json({ error: 'Event not found' }, { status: 404 });
+    }
+
+    await event.destroy();
+
+    return NextResponse.json({ message: 'Event deleted successfully' });
+  } catch (error) {
+    console.error('Error deleting event:', error);
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+  }
+}

@@ -61,6 +61,9 @@ const EventList: React.FC<EventListProps> = ({ events }) => {
               <Link href={`/admin/events/edit/${event.id}`} className="text-blue-500 hover:text-blue-700">
                 Edit
               </Link>
+              <Link href={`/admin/events/delete/${event.id}`} className="ml-4 text-red-500 hover:text-red-700">
+                Delete
+              </Link>
             </td>
           </tr>
         ))}
