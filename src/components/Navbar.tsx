@@ -14,8 +14,8 @@ const navItems: Array<NavItem> = [
   {
     name: 'Maps',
     subItems: [
-      { title: 'Juneteenth', href: 'downloads/juneteenth-map.pdf' },
-      { title: 'Youthfest', href: 'downloads/youth-fest-map.pdf' },
+      { title: 'Juneteenth', href: 'downloads/festival_map_2025.jpg' },
+      { title: 'Parade', href: 'downloads/parade_map_2025.jpg' },
     ],
   },
   { name: 'Vendor Signup', path: '/vendor-application' },
