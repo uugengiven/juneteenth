@@ -9,7 +9,7 @@ const sponsors = [
       "name": "Heinz Endowments",
       "websiteUrl": "https://www.heinz.org/",
       "imageUrl": "/images/sponsors/heinzendowments.svg",
-      "visible": false
+      "visible": true
     },
     {
       "name": "Citizens Bank",
