@@ -12,7 +12,7 @@ const DollarBank = () => {
       <h2 className={`text-5xl pb-4 ${montserrat.className}`}>Small Business Vendor Plaza</h2>
       <div className="w-2/3 h-1 bg-gradient-to-l from-red-700 via-orange-500 to-yellow-400"></div>
       </div>
-      <div className="aspect-video mx-4 rounded-lg overflow-hidden w-1/2 my-6">
+      {/* <div className="aspect-video mx-4 rounded-lg overflow-hidden w-1/2 my-6">
               <iframe
               src="https://www.youtube.com/embed/vomubbNLxs0?si=_RzFcN3d4CSFLZk9"
               title="YouTube video player"
@@ -21,7 +21,7 @@ const DollarBank = () => {
               allowFullScreen
               className="w-full h-full shadow-md"
               ></iframe>
-          </div>
+          </div> */}
     </section>
   );
 };

@@ -1,8 +1,8 @@
 const RecapSection:React.FC = () => {
     return(
-        <section className="bg-white pt-4 pb-12">
+        <section className="bg-gray-900 pt-4 pb-12">
             <div className="mt-12 text-center">
-            <h3 className="text-6xl font-bold text-grey-900 m-4">Juneteenth 2025 Is Here!</h3>
+            <h3 className="text-6xl font-bold text-white m-4">Juneteenth 2025 Is Here!</h3>
             <div className="aspect-video mx-4 rounded-lg overflow-hidden">
                 <iframe
                 src="https://www.youtube.com/embed/5iTGaC51kwQ?si=RuplTlZBaC9RVlKe"
