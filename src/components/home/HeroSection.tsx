@@ -3,7 +3,7 @@ import { montserrat } from "../../app/fonts";
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
-  const eventDate ="June 14, 2024 12:00:00"; // Set the event date
+  const eventDate ="June 19, 2026 12:00:00"; // Set the event date
 
   return (
     <div className="flex items-center justify-between bg-red-700 pl-10">
