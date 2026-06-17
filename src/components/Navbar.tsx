@@ -4,6 +4,7 @@ import { SignedIn, UserButton } from '@clerk/nextjs';
 import { NavItem } from './types';
 import NavLarge from './NavLarge';
 import NavSmall from './NavSmall';
+import { flyers } from '@/data/flyers';
 
 // Array of navigation items
 const navItems: Array<NavItem> = [
@@ -17,6 +18,13 @@ const navItems: Array<NavItem> = [
       { title: 'Juneteenth', href: 'downloads/festival_map_2025.jpg' },
       { title: 'Parade', href: 'downloads/parade_map_2025.jpg' },
     ],
+  },
+  {
+    name: 'Flyers',
+    subItems: flyers.map(flyer => ({
+      title: flyer.title,
+      href: `/flyers/${flyer.slug}`,
+    })),
   },
   { name: 'Vendor Signup', path: '/vendor-application' },
   //  { name: 'Purchase Tickets', path: '/tickets' },
