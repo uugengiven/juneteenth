@@ -48,8 +48,10 @@ const NavSmall = ({ links }: NavProps) => {
                             >
                               <Link
                                 href={subItem.href}
-                                rel="noopener noreferrer"
-                                target="_blank"
+                                {...(!subItem.internal && {
+                                  rel: 'noopener noreferrer',
+                                  target: '_blank',
+                                })}
                               >
                                 {subItem.title}
                               </Link>

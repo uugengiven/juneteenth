@@ -6,6 +6,8 @@ export type ListItemType = {
   className?: string;
   href: string;
   title?: string;
+  // When true, the link stays in the same tab instead of opening in a new one
+  internal?: boolean;
 };
 
 // Define a type for navigation items

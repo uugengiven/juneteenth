@@ -24,6 +24,7 @@ const navItems: Array<NavItem> = [
     subItems: flyers.map(flyer => ({
       title: flyer.title,
       href: `/flyers/${flyer.slug}`,
+      internal: true,
     })),
   },
   { name: 'Vendor Signup', path: '/vendor-application' },

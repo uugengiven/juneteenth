@@ -7,13 +7,12 @@ import { CaretDownIcon } from '@radix-ui/react-icons';
 import './navlarge.css';
 import { ListItemType, NavProps } from './types';
 
-const ListItem = ({ className, title, ...props }: ListItemType) => (
+const ListItem = ({ className, title, internal, ...props }: ListItemType) => (
   <li>
     <NavigationMenu.Link asChild>
       <a
         className={classNames('ListItemLink', className)}
-        rel="noopener noreferrer"
-        target="_blank"
+        {...(!internal && { rel: 'noopener noreferrer', target: '_blank' })}
         {...props}
       >
         <div className="ListItemHeading">{title}</div>
@@ -55,6 +54,7 @@ const NavLarge = ({ links }: NavProps) => {
                           <ListItem
                             title={subItem.title}
                             href={subItem.href}
+                            internal={subItem.internal}
                             key={subItem.title}
                           />
                         ))}

@@ -21,6 +21,16 @@ export default function FlyerPage({ params }: { params: { slug: string } }) {
         <h1 className="text-3xl md:text-5xl font-black text-center text-red-700 mb-6">
           {flyer.title}
         </h1>
+        {flyer.url && (
+          <a
+            href={flyer.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-red-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-red-800 mb-6"
+          >
+            Get Tickets Now
+          </a>
+        )}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={`/images/flyers/2026/${flyer.file}`}
